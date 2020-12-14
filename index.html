@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <script src="scripts/choices.min.js" defer></script>
+    <script src="scripts/select.js" defer></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <script src="scripts/myScript.js" defer></script>
+    <title>Blanchard</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container container-header">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <img src="images/logo1.png" alt="Blanchard. Художественная галерея">
+            </div>
+            <button class="header__search"></button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="" tabindex="0">О нас</a></li>
+                    <li><a href="" tabindex="1">Галерея</a></li>
+                    <li><a href="" tabindex="2">Каталог</a></li>
+                    <li><a href="" tabindex="3">События</a></li>
+                    <li><a href="" tabindex="4">Издания</a></li>
+                    <li><a href="" tabindex="5">Проекты</a></li>
+                    <li><a href="" tabindex="6">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__entry" tabindex="7">
+                <a href="">Войти</a>
+            </div>
+            <div class="header__menu">
+                <ul class="menu__list">
+                    <li tabindex="8">
+                        <select class="header__select js-choice"> 
+                                <option value="0">Реализм</option>
+                                <option value="1">Тинторетто</option >
+                                <option value="2">Фридрих</option>
+                                <option value="3">Леонардо</option>
+                                <option value="4">Верроккьо</option>
+                        </select>
+                    </li>
+                    <li tabindex="9">
+                        <select class="header__select js-choice">
+                            <option value="5">Импрессионизм</option>
+                            <option value="6">Моне</option>
+                            <option value="7">Сислей</option>
+                            <option value="8">Мане</option>
+                            <option value="9">Ренуар</option>
+                        </select>
+                    </li>
+                    <li tabindex="10">
+                        <select class="header__select js-choice">
+                            <option value="10">Постимпрессионизм</option>
+                            <option value="11">Ван Гог</option>
+                            <option value="12">Сезанн</option>
+                            <option value="13">Гоген</option>
+                            <option value="14">Сёра</option>
+                        </select>
+                    </li>
+                    <li tabindex="11">
+                        <select class="header__select js-choice">
+                            <option value="15">Авангард</option>
+                            <option value="16">Кандинский</option>
+                            <option value="17">Маринетти</option>
+                            <option value="18">Малевич</option>
+                            <option value="19">Пикассо</option>
+                        </select>
+                    </li>
+                    <li tabindex="12">
+                        <select class="header__select js-choice">
+                            <option value="20">Футуризм</option>
+                            <option value="21">Карра</option>
+                            <option value="22">Прателла</option>
+                            <option value="23">Северини</option>
+                            <option value="24">Балла</option>
+                        </select>
+                    </li>
+                </ul>
+                <form class="header__form" tabindex="13">
+                    <button class="header__btn"></button>
+                    <input type="text" name="search" placeholder="Поиск по сайту" autocomplete="off"
+                        class="header__input">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container container-hero">
+            <div class="hero__inner">
+                <h1 class="hero__title" tabindex="14">Прикоснитесь к прекрасному</h1>
+                <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                <button class="hero__btn" tabindex="15">Подписаться на рассылку</button>
+            </div> 
+        </div>
+    </section>
+</body>
+
+</html>
