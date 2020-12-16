@@ -1,4 +1,4 @@
-let datas = document.querySelectorAll('.choices__list--dropdown');
+let datas = document.querySelectorAll('.topmenu__submenu');
 
 new SimpleBar(datas[0]);
 new SimpleBar(datas[1]);
