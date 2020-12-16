@@ -221,35 +221,25 @@ button {
   color: var(--color-site);
 }
 
+.topmenu__arrow {
+  margin-bottom: 2px;
+}
+
+.topmenu>li:hover .topmenu__arrow {
+  transform: rotate(180deg);
+  margin-bottom: -2px;
+}
+
+.topmenu>li:hover .topmenu__arrow path{
+  stroke: #7943A4;
+}
+
 .topmenu>li:focus {
   outline: 2px solid #7943A4;
 }
 
-.topmenu>li:after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-left: 1px solid var(--color-main);
-  border-bottom: 1px solid var(--color-main);
-  right: -20px;
-  top: 6px;
-  z-index: 55;
-  transform: rotate(-46deg);
-  transition: border .3s ease;
-}
-
-.topmenu>li:hover:after {
-  display: block;
-  transform: rotate(134deg);
-  top: 12px;
-  border-left: 1px solid var(--color-site);
-  border-bottom: 1px solid var(--color-site);
-}
-
 .topmenu>li:not(:last-child) {
-  margin-right: 119px;
+  margin-right: 96px;
 }
 
 .topmenu__submenu {
@@ -385,7 +375,7 @@ button {
 }
 
 .header__form {
-  margin-left: 325px;
+  margin-left: 336px;
 }
 
 .header__form:focus {
@@ -412,7 +402,7 @@ button {
   height: 21.62px;
   border: none;
   outline: none;
-  margin-right: 14px;
+  margin-right: 11px;
   transition: filter .3s ease;
 }
 
@@ -488,7 +478,6 @@ button {
 
 .hero {
   background: transparent url('../images/birmingham-museums1.png') no-repeat center center;
-  ;
   min-height: 700px;
   animation: anim 20s alternate linear infinite;
 }
@@ -550,3 +539,30 @@ button {
   background: #7943A4;
   letter-spacing: 2px;
 }
+
+/*Info block*/
+
+.info-block__inner {
+  margin-top: 80px;
+  margin-bottom: 71px;
+}
+
+.data__title {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--color-text);
+  letter-spacing: 1px;
+  margin-bottom: 17px;
+}
+
+.data__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-text);
+  max-width: 1080px;
+  letter-spacing: 0.5px;
+  padding-left: 4px;
+}
+
