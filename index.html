@@ -4,12 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="./styles/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media.css">
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
-  <script src="scripts/scroll.js" defer></script>
+  <script src="./scripts/scroll.js" defer></script>
+  <script src="./scripts/choices.min.js" defer></script>
+  <script src="./scripts/selector.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./scripts/swiper.js" defer></script>
+
   <title>Blanchard</title>
 </head>
 
@@ -45,58 +52,72 @@
       <div class="container container-menu">
         <ul class="topmenu">
           <li tabindex="0">Реализм
-            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="topmenu__arrow">
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
             <ul class="topmenu__submenu">
-              <li name="Tintoretto">Тинторетто</li>
-              <li name="Fridrih">Фридрих</li>
-              <li name="Leonardo">Леонардо</li>
-              <li name="Verrokko">Верроккьо</li>
+              <li id="1">Тинторетто</li>
+              <li id="2">Фридрих</li>
+              <li id="3">Леонардо</li>
+              <li id="4">Верроккьо</li>
+              <li id="5">Тинторетто</li>
+              <li id="6">Фридрих</li>
             </ul>
           </li>
           <li tabindex="0">Импрессионизм
-            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="topmenu__arrow">
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
             <ul class="topmenu__submenu">
-              <li name="Mone">Моне</li>
-              <li name="Sislej">Сислей</li>
-              <li name="Mane">Мане</li>
-              <li name="Renuar">Ренуар</li>
+              <li id="7">Моне</li>
+              <li id="8">Сислей</li>
+              <li id="9">Мане</li>
+              <li id="10">Ренуар</li>
+              <li id="11">Моне</li>
+              <li id="12">Сислей</li>
             </ul>
           </li>
           <li tabindex="0">Постимпрессионизм
-            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="topmenu__arrow">
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
             <ul class="topmenu__submenu">
-              <li name="VanGog">Ван Гог</li>
-              <li name="Sezann">Сезанн</li>
-              <li name="Gogen">Гоген</li>
-              <li name="Syora">Сёра</li>
+              <li id="13">Ван Гог</li>
+              <li id="14">Сезанн</li>
+              <li id="15">Гоген</li>
+              <li id="16">Сёра</li>
+              <li id="17">Ван Гог</li>
+              <li id="18">Сёра</li>
             </ul>
           </li>
           <li tabindex="0">Авангард
-            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="topmenu__arrow">
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
             <ul class="topmenu__submenu">
-              <li name="Kandinskij">Кандинский</li>
-              <li name="Marinetti">Маринетти</li>
-              <li name="Malevich">Малевич</li>
-              <li name="Pikasso">Пикассо</li>
+              <li id="19">Кандинский</li>
+              <li id="20">Маринетти</li>
+              <li id="21">Малевич</li>
+              <li id="22">Пикассо</li>
+              <li id="23">Кандинский</li>
+              <li id="24">Маринетти</li>
             </ul>
           </li>
           <li tabindex="0">Футуризм
-            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="topmenu__arrow">
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
             <ul class="topmenu__submenu">
-              <li name="Karra">Карра</li>
-              <li name="Pratella">Прателла</li>
-              <li name="Severini">Северини</li>
-              <li name="Balla">Балла</li>
+              <li id="25">Карра</li>
+              <li id="26">Прателла</li>
+              <li id="27">Северини</li>
+              <li id="28">Балла</li>
+              <li id="29">Маринетти</li>
             </ul>
           </li>
         </ul>
@@ -137,7 +158,136 @@
     </div>
   </section>
 
+  <section class="gallery">
+    <div class="container container-gallery">
 
+      <div>
+        <h3 class="gallery__title">Галерея</h3>
+        <div class="filter gallery__filter">
+          <span class="filter__span">Фильтровать по:</span>
+          <select class="filter__select js-choice">
+            <option value="0">Автор</option>
+            <option value="1">Направление</option>
+            <option value="2">Техника</option>
+          </select>
+        </div>
+        <p class="gallery__remark">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+          скачиваний <button class="gallery__authorization">авторизуйтесь,</button> либо воспользуйтесь лицензией.
+        </p>
+      </div>
+
+      <div>
+        <div class="swiper gallery__swiper">
+          <div class="swiper-container">
+
+            <div class="swiper__navigation">
+              <div class="swiper-button-prev" tabindex="0"></div>
+              <div class="swiper__pages">
+                <span class="swiper__page-actual">1</span>
+                &#47;
+                <span class="swiper__page-all">3</span>
+              </div>
+              <div class="swiper-button-next" tabindex="0"></div>
+            </div>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures13.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures14.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures15.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures16.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures17.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures18.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures19.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures20.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures21.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures22.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures23.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures24.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures25.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures26.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures27.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures28.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures29.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide" tabindex="0">
+                <div class="swiper-slide__inner">
+                  <img src="./images/pictures30.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
