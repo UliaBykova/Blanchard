@@ -112,6 +112,11 @@ button {
   margin-right: 62px;
 }
 
+.nav__item:focus {
+  border : none;
+  outline: 2px solid red
+}
+
 .nav__link {
   display: block;
   white-space: nowrap;
