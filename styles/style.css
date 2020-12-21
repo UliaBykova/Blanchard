@@ -112,11 +112,6 @@ button {
   margin-right: 62px;
 }
 
-.nav__item:focus {
-  border : none;
-  outline: 2px solid red
-}
-
 .nav__link {
   display: block;
   white-space: nowrap;
@@ -274,6 +269,14 @@ button {
   min-height: 40px;
   padding-left: 14px;
   color: #fff;
+}
+
+.submenu__item:focus {
+  outline: 2px solid var(--site-color);
+}
+
+.submenu__item:focus:not(:focus-visible) {
+  outline: none;
 }
 
 [id="1"],
