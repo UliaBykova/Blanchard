@@ -15,7 +15,9 @@
   <script src="./scripts/choices.min.js" defer></script>
   <script src="./scripts/selector.js" defer></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./scripts/topmenu.js" defer></script>
   <script src="./scripts/swiper.js" defer></script>
+  <script src="./scripts/tabs.js" defer></script>
 
   <title>Blanchard</title>
 </head>
@@ -24,100 +26,96 @@
   <header class="header">
     <div class="container">
       <div class="header__top-menu">
-        <div class="burger header__burger">
-          <button>
+          <button class="burger header__burger">
             <span class="burger__line"></span>
           </button>
-        </div>
         <div class="logo header__logo">
           <img src="images/logo1.png" alt="Blanchard. Художественная галерея">
         </div>
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li><a class="nav__link" href="">О нас</a></li>
-            <li><a class="nav__link" href="">Галерея</a></li>
-            <li><a class="nav__link" href="">Каталог</a></li>
-            <li><a class="nav__link" href="">События</a></li>
-            <li><a class="nav__link" href="">Издания</a></li>
-            <li><a class="nav__link" href="">Проекты</a></li>
-            <li><a class="nav__link" href="">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="">События</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Издания</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <div class="login header__login" tabindex="0">
-          <a class="login__link" href="">Войти</a>
-        </div>
+        <a href="" class="header__login">Войти</a>
       </div>
     </div>
     <div class="menu header__bottom-menu">
       <div class="container container-menu">
         <ul class="topmenu">
-          <li tabindex="0">Реализм
+          <li class="topmenu__item" tabindex="0">Реализм
             <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
-            <ul class="topmenu__submenu">
-              <li id="1">Тинторетто</li>
-              <li id="2">Фридрих</li>
-              <li id="3">Леонардо</li>
-              <li id="4">Верроккьо</li>
-              <li id="5">Тинторетто</li>
-              <li id="6">Фридрих</li>
+            <ul class="submenu topmenu__submenu">
+              <li class="submenu__item" id="1">Тинторетто</li>
+              <li class="submenu__item" id="2">Фридрих</li>
+              <li class="submenu__item" id="3">Леонардо</li>
+              <li class="submenu__item" id="4">Верроккьо</li>
+              <li class="submenu__item" id="5">Тинторетто</li>
+              <li class="submenu__item" id="6">Фридрих</li>
             </ul>
           </li>
-          <li tabindex="0">Импрессионизм
+          <li class="topmenu__item" tabindex="0">Импрессионизм
             <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
-            <ul class="topmenu__submenu">
-              <li id="7">Моне</li>
-              <li id="8">Сислей</li>
-              <li id="9">Мане</li>
-              <li id="10">Ренуар</li>
-              <li id="11">Моне</li>
-              <li id="12">Сислей</li>
+            <ul class="submenu topmenu__submenu">
+              <li class="submenu__item" id="7">Моне</li>
+              <li class="submenu__item" id="8">Сислей</li>
+              <li class="submenu__item" id="9">Мане</li>
+              <li class="submenu__item" id="10">Ренуар</li>
+              <li class="submenu__item" id="11">Моне</li>
+              <li class="submenu__item" id="12">Сислей</li>
             </ul>
           </li>
-          <li tabindex="0">Постимпрессионизм
+          <li class="topmenu__item" tabindex="0">Постимпрессионизм
             <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
-            <ul class="topmenu__submenu">
-              <li id="13">Ван Гог</li>
-              <li id="14">Сезанн</li>
-              <li id="15">Гоген</li>
-              <li id="16">Сёра</li>
-              <li id="17">Ван Гог</li>
-              <li id="18">Сёра</li>
+            <ul class="submenu topmenu__submenu">
+              <li class="submenu__item" id="13">Ван Гог</li>
+              <li class="submenu__item" id="14">Сезанн</li>
+              <li class="submenu__item" id="15">Гоген</li>
+              <li class="submenu__item" id="16">Сёра</li>
+              <li class="submenu__item" id="17">Ван Гог</li>
+              <li class="submenu__item" id="18">Сёра</li>
             </ul>
           </li>
-          <li tabindex="0">Авангард
+          <li class="topmenu__item" tabindex="0">Авангард
             <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
-            <ul class="topmenu__submenu">
-              <li id="19">Кандинский</li>
-              <li id="20">Маринетти</li>
-              <li id="21">Малевич</li>
-              <li id="22">Пикассо</li>
-              <li id="23">Кандинский</li>
-              <li id="24">Маринетти</li>
+            <ul class="submenu topmenu__submenu">
+              <li class="submenu__item" id="19">Кандинский</li>
+              <li class="submenu__item" id="20">Маринетти</li>
+              <li class="submenu__item" id="21">Малевич</li>
+              <li class="submenu__item" id="22">Пикассо</li>
+              <li class="submenu__item" id="23">Кандинский</li>
+              <li class="submenu__item" id="24">Маринетти</li>
             </ul>
           </li>
-          <li tabindex="0">Футуризм
+          <li class="topmenu__item" tabindex="0">Футуризм
             <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="topmenu__arrow">
               <path d="M11 5L6 10L0.999998 5" stroke="white" />
             </svg>
-            <ul class="topmenu__submenu">
-              <li id="25">Карра</li>
-              <li id="26">Прателла</li>
-              <li id="27">Северини</li>
-              <li id="28">Балла</li>
-              <li id="29">Маринетти</li>
+            <ul class="submenu topmenu__submenu">
+              <li class="submenu__item" id="25">Карра</li>
+              <li class="submenu__item" id="26">Прателла</li>
+              <li class="submenu__item" id="27">Северини</li>
+              <li class="submenu__item" id="28">Балла</li>
+              <li class="submenu__item" id="29">Маринетти</li>
             </ul>
           </li>
         </ul>
@@ -142,8 +140,8 @@
 
   <section class="info-block">
     <div class="container container-info-block">
-      <div class="data info-block__inner">
-        <h3 class="data__title">О нас</h3>
+      <div class="data">
+        <h2 class="data__title">О нас</h2>
         <p class="data__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как способного принимать собственные
           решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
@@ -153,16 +151,16 @@
           производственный план целого ряда внеочередных мероприятий с учётом комплекса
           распределения внутренних резервов и ресурсов. В рамках спецификации современных
           стандартов, действия представителей оппозиции набирают популярность среди
-          определенных слоев населения, а значит, должны быть разоблачены.</p>
+          определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
       </div>
     </div>
   </section>
 
   <section class="gallery">
     <div class="container container-gallery">
-
       <div>
-        <h3 class="gallery__title">Галерея</h3>
+        <h2 class="gallery__title">Галерея</h2>
         <div class="filter gallery__filter">
           <span class="filter__span">Фильтровать по:</span>
           <select class="filter__select js-choice">
@@ -194,92 +192,92 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures13.jpg">
+                  <img src="./images/pictures13.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures14.jpg">
+                  <img src="./images/pictures14.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures15.jpg">
+                  <img src="./images/pictures15.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures16.jpg">
+                  <img src="./images/pictures16.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures17.jpg">
+                  <img src="./images/pictures17.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures18.jpg">
+                  <img src="./images/pictures18.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures19.jpg">
+                  <img src="./images/pictures19.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures20.jpg">
+                  <img src="./images/pictures20.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures21.jpg">
+                  <img src="./images/pictures21.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures22.jpg">
+                  <img src="./images/pictures22.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures23.jpg">
+                  <img src="./images/pictures23.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures24.jpg">
+                  <img src="./images/pictures24.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures25.jpg">
+                  <img src="./images/pictures25.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures26.jpg">
+                  <img src="./images/pictures26.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures27.jpg">
+                  <img src="./images/pictures27.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures28.jpg">
+                  <img src="./images/pictures28.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures29.jpg">
+                  <img src="./images/pictures29.jpg" alt="picture">
                 </div>
               </div>
               <div class="swiper-slide" tabindex="0">
                 <div class="swiper-slide__inner">
-                  <img src="./images/pictures30.jpg">
+                  <img src="./images/pictures30.jpg" alt="picture">
                 </div>
               </div>
             </div>
