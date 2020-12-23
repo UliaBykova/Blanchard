@@ -504,6 +504,10 @@ button {
   padding-top: 141px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .hero__title {
   font-size: 72px;
   line-height: 84px;
