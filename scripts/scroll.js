@@ -1,3 +1,4 @@
+(function () {
 let datas = document.querySelectorAll('.topmenu__submenu');
 
 datas.forEach((item) => {
@@ -5,3 +6,4 @@ datas.forEach((item) => {
         new SimpleBar(item)
     }
 })
+})();
