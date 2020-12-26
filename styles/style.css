@@ -859,7 +859,7 @@ button {
 }
 
 .tabs__item:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 50px;
 }
 
 .tabs__item {
@@ -868,8 +868,8 @@ button {
 
 .tabs__item-active:after {
   position: absolute;
-  width : 66px;
-  height: 66px;
+  width : 63px;
+  height: 63px;
   content : '';
   top : -11px;
   left : -11px;
@@ -920,7 +920,7 @@ button {
 }
 
 .catalog__info {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .tabs-container {
@@ -937,7 +937,7 @@ button {
 }
 
 .doer__photo {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   width: 750px;
   height: 470px;
   object-fit: cover;
@@ -954,7 +954,7 @@ button {
   font-weight: normal;
   font-size: 12px;
   color: #999999;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .doer__info {
@@ -975,7 +975,6 @@ button {
 .accordion__heading {
   display: flex;
   justify-content: space-between;
-  padding: 32px 0 24px 0;
 }
 
 .first-dropdown {
@@ -991,6 +990,7 @@ button {
 }
 
 .accordion__subtitle {
+  padding: 41px 0 45px 0;
   font-weight: 600;
   font-size: 24px;
   color: #333333;
@@ -1024,6 +1024,7 @@ button {
   transform: rotate(135deg);
   transition: all .35s ease-in-out;
   cursor: pointer;
+  margin : 30px 2px 0 0;
 }
 
 .accordion__icon:focus {
@@ -1069,14 +1070,18 @@ button {
 }
 
 .accordion__table {
-  width: 100%;
+  width: 90%;
 }
 
 .accordion__table td {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   cursor: pointer;
   transition: color .35s ease-in-out;
+}
+
+.active-td{
+  color : var(--focus-color);
 }
 
 .accordion__table td:hover {
@@ -1102,7 +1107,7 @@ button {
 }
 
 .accordion__inner {
-  padding: 25px 0 23px 0;
+  padding: 30px 0 21px 0;
   display: none;
   transition: all 11s ease;
 }
@@ -1110,3 +1115,12 @@ button {
 .accordion__inner-active {
   display: block;
 }
+
+.accordion__table td:nth-child(1) {
+  padding-right: 26px;
+}
+
+.accordion__table td:nth-child(2) {
+  padding-right: 42px;
+}
+
