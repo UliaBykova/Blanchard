@@ -17,8 +17,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
   <script src="./scripts/topmenu.js" defer></script>
   <script src="./scripts/swiper.js" defer></script>
-  <script src="./scripts/tabs.js" defer></script>
   <script src="./scripts/accordion.js" defer></script>
+  <script src="./scripts/tabs.js" defer></script>
+  <script src="./scripts/generatorData.js" defer></script>
   <title>Blanchard</title>
 </head>
 
@@ -320,38 +321,14 @@
         день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
       </div>
 
-      <div class="tabs-container">
-        <div class="tabs__content" data-target="one">
-          <div class="detail tabs__detail">
-            <img class="detail__photo" src="http://placehold.it/750x470/FFCCCC">
-            <div class="detail__fullName">Test1</div>
-            <div class="detail__dateOfBirth">2 июня 1448 — 11 января 1494.</div>
-            <p class="detail__info">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta magnam laborum eligendi repudiandae nisi
-              saepe molestiae commodi cumque pariatur earum inventore nihil, distinctio deserunt culpa quibusdam vitae
-              tenetur expedita deleniti.
-            </p>
-          </div>
-        </div>
+      <div class="tabs tabs-container">
 
-        <div class="tabs__content" data-target="two">
-          <div class="detail tabs__detail">
-            <img class="detail__photo" src="http://placehold.it/750x470/960421">
-            <div class="detail__fullName">Test2</div>
-            <div class="detail__dateOfBirth">2 июня 1448 — 11 января 1494.</div>
-            <p class="detail__info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur alias architecto laboriosam
-              reprehenderit. Libero sed amet ad et maxime quisquam, veritatis repellat magnam rerum consectetur eum
-              aliquam, reprehenderit sit vitae.</p>
-          </div>
-        </div>
-
-        <div class="tabs__content tabs__content-active" data-target="three">
-          <div class="detail tabs__detail">
-            <img class="detail__photo" src="./images/painter1.jpg">
-            <div class="detail__fullName">Доменико Гирландайо</div>
-            <div class="detail__dateOfBirth">2 июня 1448 — 11 января 1494.</div>
-            <p class="detail__info">
+        <div class="tabs__content">
+          <div class="doer tabs__doer">
+            <img class="doer__photo" src="./images/painter1.jpg">
+            <div class="doer__fullName">Доменико Гирландайо</div>
+            <div class="doer__dateOfBirth">2 июня 1448 — 11 января 1494</div>
+            <p class="doer__info">
               Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
               продолжили
               его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
@@ -362,40 +339,162 @@
           </div>
         </div>
 
-        <div class="tabs__content" data-target="four">
-          <div class="detail tabs__detail">
-            <img class="detail__photo" src="http://placehold.it/750x470/660099">
-            <div class="detail__fullName">4</div>
-            <div class="detail__dateOfBirth">2 июня 1448 — 11 января 1494.</div>
-            <p class="detail__info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, assumenda impedit dolor voluptates
-              minus voluptate quaerat ducimus voluptatibus, porro minima mollitia tempore. Consectetur, iste quisquam!
-              Ratione error provident minus commodi.
-            </p>
-          </div>
-        </div>
-
-        <div class="tabs__content" data-target="five">
-          <div class="detail tabs__detail">
-            <img class="detail__photo" src="http://placehold.it/750x470/FF9999">
-            <div class="detail__fullName">555</div>
-            <div class="detail__dateOfBirth">5</div>
-            <p class="detail__info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus ab neque dolores nemo
-              cupiditate ullam fugiat ad quis, adipisci nisi, omnis, eaque alias. Animi corporis rerum culpa illo
-              ratione.</p>
-          </div>
-        </div>
-
         <div class="accordion tabs__accordion">
 
-          <div class="accordion__dropdown-container first-dropdown">
+          <div class="accordion__dropdown-container first-dropdown" id="1400">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1400 по 1499 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 1400 по 1499 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                  <tr>
+                    <td>Брамантино</td>
+                    <td>Джованни да Удине</td>
+                  </tr>
+                  <tr>
+                    <td>Бреа, Людовико</td>
+                    <td>Джованни ди Паоло</td>
+                  </tr>
+                  <tr>
+                    <td>Бьяджо д’Антонио Туччи</td>
+                    <td>Джорджоне</td>
+                  </tr>
+                </table>
+              </div> 
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                  <tr>
+                    <td>Брамантино</td>
+                    <td>Джованни да Удине</td>
+                  </tr>
+                  <tr>
+                    <td>Бреа, Людовико</td>
+                    <td>Джованни ди Паоло</td>
+                  </tr>
+                  <tr>
+                    <td>Бьяджо д’Антонио Туччи</td>
+                    <td>Джорджоне</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Андрей Рублев</td>
+                    <td>Дионисий</td>
+                    <td>Феофан Грек</td>
+                  </tr>
+                  <tr>
+                    <td>Илья Репин</td>
+                    <td>Илья Айвазовский</td>
+                    <td>Василий Кандинский</td>
+                  </tr>
+                  <tr>
+                    <td>Михаил Врубель</td>
+                    <td>Николай Рерих</td>
+                    <td>Марк Шагал</td>
+                  </tr>
+                  <tr>
+                    <td>Валентин Серов</td>
+                    <td>Алексей Гаврилов</td>
+                    <td>Карл Брюллов</td>
+                  </tr>
+                  <tr>
+                    <td>Константин Коровин</td>
+                    <td>Исаак Левитан</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
                 <table class="accordion__table">
                   <tr>
                     <td>Бенедетто ди Биндо</td>
@@ -444,76 +543,939 @@
             </article>
           </div>
 
-          <div class="accordion__dropdown-container">
+          <div class="accordion__dropdown-container" id="1500">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1500 по 1599 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 1500 по 1599 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, earum tempore. Minus tempore modi
-                aut quis recusandae consequatur numquam eum suscipit, voluptates officiis eveniet voluptatem illum
-                obcaecati necessitatibus a error.
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                  <tr>
+                    <td>Брамантино</td>
+                    <td>Джованни да Удине</td>
+                  </tr>
+                  <tr>
+                    <td>Бреа, Людовико</td>
+                    <td>Джованни ди Паоло</td>
+                  </tr>
+                  <tr>
+                    <td>Бьяджо д’Антонио Туччи</td>
+                    <td>Джорджоне</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                  <tr>
+                    <td>Брамантино</td>
+                    <td>Джованни да Удине</td>
+                  </tr>
+                  <tr>
+                    <td>Бреа, Людовико</td>
+                    <td>Джованни ди Паоло</td>
+                  </tr>
+                  <tr>
+                    <td>Бьяджо д’Антонио Туччи</td>
+                    <td>Джорджоне</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                  <tr>
+                    <td>Бьяджо д’Антонио Туччи</td>
+                    <td>Джорджоне</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Виктория Антонова</td>
+                    <td>Александра Лебедева</td>
+                    <td>Иван Наумов</td>
+                  </tr>
+                  <tr>
+                    <td>Михаил Лосев</td>
+                    <td>Мария Миронова</td>
+                    <td>Константин Жуков</td>
+                  </tr>
+                  <tr>
+                    <td>Марта Соколова</td>
+                    <td>Александр Григорьев</td>
+                    <td>Валерия Александрова</td>
+                  </tr>
+                  <tr>
+                    <td>Вероника Никитина</td>
+                    <td>Елизавета Козлова</td>
+                  </tr>
+                  <tr>
+                    <td>Елизавета Гуляева</td>
+                    <td>Серафима Лаврова</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                  </tr>
+                  <tr>
+                    <td>Брамантино</td>
+                    <td>Джованни да Удине</td>
+                  </tr>
+                </table>
               </div>
             </article>
           </div>
 
-          <div class="accordion__dropdown-container">
+          <div class="accordion__dropdown-container" id="1600">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1600 по 1699 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 1600 по 1699 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <div class="accordion__inner" data-target="one">
+                  <table class="accordion__table">
+                    <tr>
+                      <td>Барбра Харви</td>
+                      <td>Луиза Доусон</td>
+                      <td>Ричард Стэнли</td>
+                    </tr>
+                    <tr>
+                      <td>Айра Хэйнс</td>
+                      <td>Сидни Хаббард</td>
+                      <td>Глэдис Логан</td>
+                    </tr>
+                    <tr>
+                      <td>Шон Робинсон</td>
+                      <td>Мелисса Пауэлл</td>
+                      <td>Тайлер Прайс</td>
+                    </tr>
+                    <tr>
+                      <td>Вивьен Леонард</td>
+                      <td>Кевин Беннетт</td>
+                    </tr>
+                    <tr>
+                      <td>Джералдин Спарксн</td>
+                      <td>Гертруд Келли</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="accordion__inner" data-target="two">
+                  <table class="accordion__table">
+                    <tr>
+                      <td>Барбра Харви</td>
+                      <td>Луиза Доусон</td>
+                      <td>Ричард Стэнли</td>
+                    </tr>
+                    <tr>
+                      <td>Айра Хэйнс</td>
+                      <td>Сидни Хаббард</td>
+                      <td>Глэдис Логан</td>
+                    </tr>
+                    <tr>
+                      <td>Шон Робинсон</td>
+                      <td>Мелисса Пауэлл</td>
+                      <td>Тайлер Прайс</td>
+                    </tr>
+                    <tr>
+                      <td>Вивьен Леонард</td>
+                      <td>Кевин Беннетт</td>
+                    </tr>
+                    <tr>
+                      <td>Джералдин Спарксн</td>
+                      <td>Гертруд Келли</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="accordion__inner accordion__inner-active" data-target="three">
+                  <table class="accordion__table">
+                    <tr>
+                      <td>Барбра Харви</td>
+                      <td>Луиза Доусон</td>
+                      <td>Ричард Стэнли</td>
+                    </tr>
+                    <tr>
+                      <td>Айра Хэйнс</td>
+                      <td>Сидни Хаббард</td>
+                      <td>Глэдис Логан</td>
+                    </tr>
+                    <tr>
+                      <td>Шон Робинсон</td>
+                      <td>Мелисса Пауэлл</td>
+                      <td>Тайлер Прайс</td>
+                    </tr>
+                    <tr>
+                      <td>Вивьен Леонард</td>
+                      <td>Кевин Беннетт</td>
+                    </tr>
+                    <tr>
+                      <td>Джералдин Спарксн</td>
+                      <td>Гертруд Келли</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="accordion__inner" data-target="four">
+                  <table class="accordion__table">
+                    <tr>
+                      <td>Ирина Литвинова</td>
+                      <td>Константин Соловьев</td>
+                      <td>Варвара Антонова</td>
+                    </tr>
+                    <tr>
+                      <td>Михаил Лосев</td>
+                      <td>Мария Миронова</td>
+                      <td>Константин Жуков</td>
+                    </tr>
+                    <tr>
+                      <td>Алина Романова</td>
+                      <td>Екатерина Кириллова</td>
+                      <td>Тимофей Романов</td>
+                    </tr>
+                    <tr>
+                      <td>Всеволод Сотников</td>
+                      <td>Тихон Кириллов</td>
+                      <td>Максим Филатов</td>
+                    </tr>
+                    <tr>
+                      <td>Полина Матвеева</td>
+                      <td>Даниил Никулин</td>
+                      <td>Виктория Гуляева</td>
+                    </tr>
+                    <tr>
+                      <td>Константин Коровин</td>
+                      <td>Артур Волков</td>
+                      <td>Никита Москвин</td>
+                    </tr>
+                    <tr>
+                      <td>Константин Коровин</td>
+                      <td>Дамир Трифонов</td>
+                      <td>Даниил Никулин</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="accordion__inner" data-target="five">
+                  <table class="accordion__table">
+                    <tr>
+                      <td>Бенедетто ди Биндо</td>
+                      <td>Веккьетта</td>
+                      <td>Парентино, Бернардо</td>
+                    </tr>
+                    <tr>
+                      <td>Бергоньоне, Амброджо</td>
+                      <td>Андреа Верроккьо</td>
+                      <td>Пезеллино</td>
+                    </tr>
+                    <tr>
+                      <td>Биссоло, Франческо</td>
+                      <td>Доменико Гирландайо</td>
+                      <td>Пьетро Перуджино</td>
+                    </tr>
+                    <tr>
+                      <td>Больтраффио, Джованни</td>
+                      <td>Беноццо Гоццоли</td>
+                      <td>Перуцци, Бальдассаре</td>
+                    </tr>
+                    <tr>
+                      <td>Бонсиньори, Франческо</td>
+                      <td>Граначчи, Франческо</td>
+                      <td>Пизанелло</td>
+                    </tr>
+                    <tr>
+                      <td>Боттичини, Рафаэлло</td>
+                      <td>Грегорио ди Чекко</td>
+                      <td>Пинтуриккьо</td>
+                    </tr>
+                  </table>
+                </div>
+            </article>
+          </div>
+
+          <div class="accordion__dropdown-container" id="1700">
+            <div class="accordion__heading">
+              <div class="accordion__subtitle" tabindex="0">C 1700 по 1799 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
+            </div>
+            <article class="accordion__body">
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Анна Шмелева</td>
+                    <td>Никита Крылов</td>
+                    <td>Максим Алексеев</td>
+                  </tr>
+                  <tr>
+                    <td>Никита Москвин</td>
+                    <td>Софья Миронова</td>
+                    <td>Ульяна Борисова</td>
+                  </tr>
+                  <tr>
+                    <td>Артур Волков</td>
+                    <td>Андрей Казаков</td>
+                    <td>Даниил Никулин</td>
+                  </tr>
+                  <tr>
+                    <td>Алина Романова</td>
+                    <td>Екатерина Кириллова</td>
+                    <td>Тимофей Романов</td>
+                  </tr>
+                  <tr>
+                    <td>Всеволод Сотников</td>
+                    <td>Тихон Кириллов</td>
+                    <td>Максим Филатов</td>
+                  </tr>
+                  <tr>
+                    <td>Полина Матвеева</td>
+                    <td>Даниил Никулин</td>
+                  </tr>
+                  <tr>
+                    <td>Константин Коровин</td>
+                    <td>Артур Волков</td>
+                  </tr>
+                  <tr>
+                    <td>Константин Коровин</td>
+                    <td>Исаак Левитан</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
               </div>
             </article>
           </div>
 
-          <div class="accordion__dropdown-container">
+          <div class="accordion__dropdown-container" id="1800">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1700 по 1799 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 1800 по 1899 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Мария Мельникова</td>
+                    <td>Гордей Лазарев</td>
+                    <td>Артём Павлов</td>
+                  </tr>
+                  <tr>
+                    <td>Семён Михайлов</td>
+                    <td>Асия Ильина</td>
+                    <td>Мария Давыдова</td>
+                  </tr>
+                  <tr>
+                    <td>Елена Полякова</td>
+                    <td>Артур Волков</td>
+                    <td>Артём Савин</td>
+                  </tr>
+                  <tr>
+                    <td>Максим Гордеев</td>
+                    <td>Арина Козлова</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Бенедетто ди Биндо</td>
+                    <td>Веккьетта</td>
+                    <td>Парентино, Бернардо</td>
+                  </tr>
+                  <tr>
+                    <td>Бергоньоне, Амброджо</td>
+                    <td>Андреа Верроккьо</td>
+                    <td>Пезеллино</td>
+                  </tr>
+                  <tr>
+                    <td>Биссоло, Франческо</td>
+                    <td>Доменико Гирландайо</td>
+                    <td>Пьетро Перуджино</td>
+                  </tr>
+                  <tr>
+                    <td>Больтраффио, Джованни</td>
+                    <td>Беноццо Гоццоли</td>
+                    <td>Перуцци, Бальдассаре</td>
+                  </tr>
+                  <tr>
+                    <td>Бонсиньори, Франческо</td>
+                    <td>Граначчи, Франческо</td>
+                    <td>Пизанелло</td>
+                  </tr>
+                  <tr>
+                    <td>Боттичини, Рафаэлло</td>
+                    <td>Грегорио ди Чекко</td>
+                    <td>Пинтуриккьо</td>
+                  </tr>
+                </table>
               </div>
             </article>
           </div>
 
-          <div class="accordion__dropdown-container">
+          <div class="accordion__dropdown-container" id="1900">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1800 по 1899 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 1900 по 1999 гг.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Ирина Литвинова</td>
+                    <td>Константин Соловьев</td>
+                    <td>Варвара Антонова</td>
+                  </tr>
+                  <tr>
+                    <td>Михаил Лосев</td>
+                    <td>Мария Миронова</td>
+                    <td>Константин Жуков</td>
+                  </tr>
+                  <tr>
+                    <td>Алина Романова</td>
+                    <td>Екатерина Кириллова</td>
+                    <td>Тимофей Романов</td>
+                  </tr>
+                  <tr>
+                    <td>Всеволод Сотников</td>
+                    <td>Тихон Кириллов</td>
+                    <td>Максим Филатов</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
               </div>
             </article>
           </div>
 
-          <div class="accordion__dropdown-container">
+          <div class="accordion__dropdown-container" id="2000">
             <div class="accordion__heading">
-              <div class="accordion__subtitle">C 1900 по 1999 гг.</div>
-              <span class="accordion__icon"></span>
+              <div class="accordion__subtitle" tabindex="0">C 2000 г.</div>
+              <span class="accordion__icon" tabindex="0"></span>
             </div>
             <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <div class="accordion__inner" data-target="one">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
               </div>
-            </article>
-          </div>
-
-          <div class="accordion__dropdown-container">
-            <div class="accordion__heading">
-              <div class="accordion__subtitle">C 2000 г.</div>
-              <span class="accordion__icon"></span>
-            </div>
-            <article class="accordion__body">
-              <div class="accordion__inner">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <div class="accordion__inner" data-target="two">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                  <tr>
+                    <td>Джералдин Спарксн</td>
+                    <td>Гертруд Келли</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Ирина Литвинова</td>
+                    <td>Константин Соловьев</td>
+                    <td>Варвара Антонова</td>
+                  </tr>
+                  <tr>
+                    <td>Михаил Лосев</td>
+                    <td>Мария Миронова</td>
+                    <td>Константин Жуков</td>
+                  </tr>
+                  <tr>
+                    <td>Алина Романова</td>
+                    <td>Екатерина Кириллова</td>
+                    <td>Тимофей Романов</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <table class="accordion__table">
+                  <tr>
+                    <td>Барбра Харви</td>
+                    <td>Луиза Доусон</td>
+                    <td>Ричард Стэнли</td>
+                  </tr>
+                  <tr>
+                    <td>Айра Хэйнс</td>
+                    <td>Сидни Хаббард</td>
+                    <td>Глэдис Логан</td>
+                  </tr>
+                  <tr>
+                    <td>Шон Робинсон</td>
+                    <td>Мелисса Пауэлл</td>
+                    <td>Тайлер Прайс</td>
+                  </tr>
+                  <tr>
+                    <td>Вивьен Леонард</td>
+                    <td>Кевин Беннетт</td>
+                  </tr>
+                </table>
               </div>
             </article>
           </div>

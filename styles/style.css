@@ -737,6 +737,7 @@ button {
   position: relative;
   width: 350px;
   height: 350px;
+  cursor: pointer;
 }
 
 .swiper-button-next,
@@ -861,16 +862,32 @@ button {
   margin-right: 45px;
 }
 
-.tabs__item-active {
+.tabs__item {
+  position: relative;
+}
+
+.tabs__item-active:after {
+  position: absolute;
+  width : 66px;
+  height: 66px;
+  content : '';
+  top : -11px;
+  left : -11px;
   border: 2px solid var(--site-color);
-  padding: 8px;
   border-radius: 50%;
+  z-index: 55;
 }
 
 .tabs__btn {
   display: block;
   width: 46px;
   height: 46px;
+}
+
+.tabs__btn:focus {
+  outline: none;
+  border: 2px solid var(--site-color);
+  border-radius: 50%;
 }
 
 .tabs__btn:hover {
@@ -910,53 +927,37 @@ button {
   display: flex;
 }
 
-.tabs__detail {
+.tabs__doer {
   padding-left: 5px;
 }
 
 .tabs__content {
-  display: none;
-  transition: all 11s ease;
-}
-
-.tabs__content-active {
-  display: block;
   width: 50%;
   padding-right: 50px;
-  /*   animation: switchTab 1s; */
 }
 
-/* @keyframes switchTab {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
-
-.detail__photo {
+.doer__photo {
   margin-bottom: 32px;
   width: 750px;
   height: 470px;
+  object-fit: cover;
 }
 
-.detail__fullName {
+.doer__fullName {
   font-weight: 600;
   font-size: 24px;
   color: #333333;
   margin-bottom: 12px;
 }
 
-.detail__dateOfBirth {
+.doer__dateOfBirth {
   font-weight: normal;
   font-size: 12px;
   color: #999999;
   margin-bottom: 10px;
 }
 
-.detail__info {
+.doer__info {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -967,8 +968,6 @@ button {
   width: 50%;
 }
 
-/*accordion*/
-
 .accordion__dropdown-container {
   overflow: hidden;
 }
@@ -976,7 +975,7 @@ button {
 .accordion__heading {
   display: flex;
   justify-content: space-between;
-/*   transition: background-color .35s ease-in-out; */
+  padding: 32px 0 24px 0;
 }
 
 .first-dropdown {
@@ -995,7 +994,22 @@ button {
   font-weight: 600;
   font-size: 24px;
   color: #333333;
-  padding: 42px 0 44px 0;
+  cursor: pointer;
+  transition: color .35s ease;
+}
+
+.accordion__subtitle:focus {
+  outline: none;
+  border: 2px solid var(--focus-color);
+}
+
+.accordion__subtitle:not(:focus-visible) {
+  border: none;
+}
+
+.accordion__subtitle:hover,
+.accordion__subtitle:active {
+  color: var(--site-color);
 }
 
 .accordion__icon {
@@ -1006,34 +1020,49 @@ button {
   background: #ECECEC;
   border-radius: 50%;
   outline: none;
-  margin-top: 32px;
   border: 2px solid transparent;
   transform: rotate(135deg);
-  transition: transform .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  cursor: pointer;
+}
+
+.accordion__icon:focus {
+  border: 2px solid var(--focus-color);
+}
+
+.accordion__icon:hover {
+  background: var(--site-color);
+}
+
+.accordion__icon:active {
+  background: var(--focus-color);
+}
+
+.accordion__icon:hover:after {
+  border-top: 1px solid var(--light-color);
+  border-right: 1px solid var(--light-color);
 }
 
 .accordion__icon:after {
-  position : absolute;
-  top : 19px;
-  left : 13px;
-  display : block;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  display: block;
   content: '';
   width: 11.79px;
   height: 11.79px;
-  border-top : 1px solid #000;
+  border-top: 1px solid #000;
   border-right: 1px solid #000;
+  transition: all .35s ease-in-out;
 }
 
 .accordion__dropdown-container.open .accordion__icon {
   transform: rotate(-45deg);
 }
 
-.accordion__inner {
-  padding : 25px 0 23px 0;
-}
-
 .accordion__body {
   max-height: 0px;
+  width: 100%;
   overflow: hidden;
   transition: max-height 350ms ease-in-out;
   border-bottom: 1px solid #CACACA;
@@ -1044,5 +1073,40 @@ button {
 }
 
 .accordion__table td {
- padding-bottom:15px;
+  position: relative;
+  padding-bottom: 15px;
+  cursor: pointer;
+  transition: color .35s ease-in-out;
+}
+
+.accordion__table td:hover {
+  color : var(--focus-color);
+}
+
+.accordion__table td:hover:after {
+  position: absolute;
+  content : '';
+  height : 1px;
+  width : 180px;
+  background : var(--focus-color);
+  top : 19px;
+  left : 0;
+}
+
+.accordion__table td:active{
+  color: var(--site-color);
+}
+
+.accordion__table td:active:after{
+ display : none;
+}
+
+.accordion__inner {
+  padding: 25px 0 23px 0;
+  display: none;
+  transition: all 11s ease;
+}
+
+.accordion__inner-active {
+  display: block;
 }
