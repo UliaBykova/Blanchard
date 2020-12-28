@@ -868,11 +868,11 @@ button {
 
 .tabs__item-active:after {
   position: absolute;
-  width : 63px;
+  width: 63px;
   height: 63px;
-  content : '';
-  top : -11px;
-  left : -11px;
+  content: '';
+  top: -11px;
+  left: -11px;
   border: 2px solid var(--site-color);
   border-radius: 50%;
   z-index: 55;
@@ -990,6 +990,7 @@ button {
 }
 
 .accordion__subtitle {
+  position: relative;
   padding: 41px 0 45px 0;
   font-weight: 600;
   font-size: 24px;
@@ -998,13 +999,19 @@ button {
   transition: color .35s ease;
 }
 
-.accordion__subtitle:focus {
-  outline: none;
-  border: 2px solid var(--focus-color);
+.accordion__subtitle:focus:after {
+  position: absolute;
+  display: block;
+  content: '';
+  outline: 2px solid var(--focus-color);
+  width: 211px;
+  height: 67px;
+  top: 20px;
+  left: 2px;
 }
 
-.accordion__subtitle:not(:focus-visible) {
-  border: none;
+.accordion__subtitle:focus {
+  outline: none;
 }
 
 .accordion__subtitle:hover,
@@ -1024,7 +1031,7 @@ button {
   transform: rotate(135deg);
   transition: all .35s ease-in-out;
   cursor: pointer;
-  margin : 30px 2px 0 0;
+  margin: 30px 2px 0 0;
 }
 
 .accordion__icon:focus {
@@ -1080,35 +1087,43 @@ button {
   transition: color .35s ease-in-out;
 }
 
-.active-td{
-  color : var(--focus-color);
+.active-td {
+  color: var(--focus-color);
 }
 
 .accordion__table td:hover {
-  color : var(--focus-color);
+  color: var(--focus-color);
 }
 
 .accordion__table td:hover:after {
   position: absolute;
-  content : '';
-  height : 1px;
-  width : 180px;
-  background : var(--focus-color);
-  top : 19px;
-  left : 0;
+  content: '';
+  height: 1px;
+  width: 180px;
+  background: var(--focus-color);
+  top: 19px;
+  left: 0;
 }
 
-.accordion__table td:active{
+.accordion__table td:active {
   color: var(--site-color);
 }
 
-.accordion__table td:active:after{
- display : none;
+.accordion__table td:focus {
+ outline: 2px solid var(--focus-color);
+}
+
+.accordion__table td:not(:focus-visible){
+  outline: none;
+}
+
+.accordion__table td:active:after {
+  display: none;
 }
 
 .accordion__inner {
-  padding: 30px 0 21px 0;
   display: none;
+  padding: 30px 0 21px 0;
   transition: all 11s ease;
 }
 
@@ -1123,4 +1138,3 @@ button {
 .accordion__table td:nth-child(2) {
   padding-right: 42px;
 }
-

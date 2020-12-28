@@ -7,24 +7,57 @@
 
   accordion.addEventListener('click', (event) => {
     let accDropdown = event.target.closest('.accordion__dropdown-container');
-    let accordionInner =  accDropdown.querySelector('.accordion__inner-active');
-    let tdAll = accordionInner.querySelectorAll('td');
+    let tdAll = accordion.querySelectorAll('td');
     let td = event.target.closest('td');
 
-      for (let i = 0; i < tdAll.length; i++) {
-        if (tdAll[i].classList.contains('active-td')) {
-         tdAll[i].classList.remove('active-td');
-        }
-     }
+    if (!td) return;
+
+    for (let i = 0; i < tdAll.length; i++) {
+      if (tdAll[i].classList.contains('active-td')) {
+        tdAll[i].classList.remove('active-td');
+      }
+    }
 
     let century = +accDropdown.id;
 
-    if (!td) return;
     td.classList.add('active-td');
     fullName.textContent = td.textContent;
     dateOfBirth.textContent = randomDate(century);
     info.textContent = getData('text');
     photo.src = getData('photo');
+  })
+
+  accordion.addEventListener('keyup', (event) => {
+    if (event.key == 'Tab') {
+      
+      let parent = event.target.closest('.accordion__dropdown-container');
+      focused = parent.querySelector(":focus");
+
+      if (parent.classList.contains('open') && focused.classList.contains('accordion__td')) {
+        this.addEventListener('keydown', (event) => {
+          let accDropdown = event.target.closest('.accordion__dropdown-container');
+          let tdAll = accordion.querySelectorAll('td');
+          let td = event.target.closest('td');
+      
+          if (!td) return;
+      
+          for (let i = 0; i < tdAll.length; i++) {
+            if (tdAll[i].classList.contains('active-td')) {
+              tdAll[i].classList.remove('active-td');
+            }
+          }
+
+          if ((event.key == 'Enter')) {
+            let century = +accDropdown.id;
+            td.classList.add('active-td');
+            fullName.textContent =  td.textContent;
+            dateOfBirth.textContent = randomDate(century);
+            info.textContent = getData('text');
+            photo.src = getData('photo');
+          }
+        })
+      }
+    }
   })
 
   function randomInteger(min, max) {
@@ -121,14 +154,14 @@
     }
     if (data === 'photo') {
       let myPhoto = new Array(
-        './../images/painter1.jpg',
-        './../images/painter2.jpg',
-        './../images/painter3.jpg',
-        './../images/painter4.jpg',
-        './../images/painter5.jpg',
-        './../images/painter6.png',
-        './../images/painter7.jpg',
-        './../images/painter8.jpg'
+        './images/painter1.jpg',
+        './images/painter2.jpg',
+        './images/painter3.jpg',
+        './images/painter4.jpg',
+        './images/painter5.jpg',
+        './images/painter6.png',
+        './images/painter7.jpg',
+        './images/painter8.jpg'
       )
       randomPhoto = Math.round(Math.random() * (myPhoto.length - 1));
       return myPhoto[randomPhoto];
