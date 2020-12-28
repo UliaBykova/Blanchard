@@ -1080,7 +1080,7 @@ button {
   width: 90%;
 }
 
-.accordion__table td {
+.accordion__td {
   position: relative;
   padding-bottom: 12px;
   cursor: pointer;
@@ -1091,11 +1091,11 @@ button {
   color: var(--focus-color);
 }
 
-.accordion__table td:hover {
+.accordion__td:hover {
   color: var(--focus-color);
 }
 
-.accordion__table td:hover:after {
+.accordion__td:hover:after {
   position: absolute;
   content: '';
   height: 1px;
@@ -1105,19 +1105,19 @@ button {
   left: 0;
 }
 
-.accordion__table td:active {
+.accordion__td:active {
   color: var(--site-color);
 }
 
-.accordion__table td:focus {
+.accordion__td:focus {
  outline: 2px solid var(--focus-color);
 }
 
-.accordion__table td:not(:focus-visible){
+.accordion__td:not(:focus-visible){
   outline: none;
 }
 
-.accordion__table td:active:after {
+.accordion__td:active:after {
   display: none;
 }
 
@@ -1131,10 +1131,14 @@ button {
   display: block;
 }
 
-.accordion__table td:nth-child(1) {
+.accordion__td:nth-child(1) {
   padding-right: 26px;
 }
 
-.accordion__table td:nth-child(2) {
+.accordion__td:nth-child(2) {
   padding-right: 42px;
+}
+
+td {
+  empty-cells: hide; 
 }

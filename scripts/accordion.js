@@ -46,28 +46,31 @@ accordion.addEventListener('keyup', (event) => {
     focused = parent.querySelector(":focus");
 
     if (parent.classList.contains('open')) {
-      this.addEventListener('keydown', (event) => {
+      parent.addEventListener('keydown', (event) => {
         if ((event.key == 'Enter') && (focused.classList.contains('accordion__icon'))) {
-/*           let accordionInner = parent.querySelector('.accordion__inner-active');
-          if (accordionInner) { */
             parent.classList.remove('open');
             article.style.maxHeight = '0px';
-/*             accordionInner.classList.remove('accordion__inner-active');
-          } */
+
+            let accordionInner = parent.querySelector('.accordion__inner-active');
+            tdAll = accordionInner.querySelectorAll('td');
+            for (let i = 0; i < tdAll.length; i++) {
+              tdAll[i].tabIndex = "-1";
+            }
         }
       })
     }
 
     if ((!parent.classList.contains('open')) && focused.classList.contains('accordion__subtitle')) {
-      this.addEventListener('keydown', (event) => {
-        let parent1 = event.target.closest('.accordion__dropdown-container');
+      parent.addEventListener('keydown', (event) => {
         if ((event.key == 'Enter')) {
-/*           let accordionInner = parent.querySelector('.accordion__inner-active');
-          if (accordionInner) { */
-            parent1.classList.add('open');
+           
+            parent.classList.add('open');
             article.style.maxHeight = article.scrollHeight + 'px';
-/*             accordionInner.classList.add('accordion__inner-active');
-          } */
+            let accordionInner = parent.querySelector('.accordion__inner-active');
+            tdAll = accordionInner.querySelectorAll('td');
+            for (let i = 0; i < tdAll.length; i++) {
+              tdAll[i].tabIndex = "0";
+            }
         }
       })
     }
