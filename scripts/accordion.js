@@ -40,7 +40,6 @@ function openCurrAccordion() {
 
 accordion.addEventListener('keyup', (event) => {
   if (event.key == 'Tab') {
-
     let parent = event.target.closest('.accordion__dropdown-container');
     let article = parent.querySelector('.accordion__body');
     focused = parent.querySelector(":focus");
@@ -52,9 +51,9 @@ accordion.addEventListener('keyup', (event) => {
             article.style.maxHeight = '0px';
 
             let accordionInner = parent.querySelector('.accordion__inner-active');
-            tdAll = accordionInner.querySelectorAll('td');
-            for (let i = 0; i < tdAll.length; i++) {
-              tdAll[i].tabIndex = "-1";
+            liAll = accordionInner.querySelectorAll('li');
+            for (let i = 0; i < liAll.length; i++) {
+              liAll[i].tabIndex = "-1";
             }
         }
       })
@@ -63,13 +62,13 @@ accordion.addEventListener('keyup', (event) => {
     if ((!parent.classList.contains('open')) && focused.classList.contains('accordion__subtitle')) {
       parent.addEventListener('keydown', (event) => {
         if ((event.key == 'Enter')) {
-           
+
             parent.classList.add('open');
             article.style.maxHeight = article.scrollHeight + 'px';
             let accordionInner = parent.querySelector('.accordion__inner-active');
-            tdAll = accordionInner.querySelectorAll('td');
-            for (let i = 0; i < tdAll.length; i++) {
-              tdAll[i].tabIndex = "0";
+            liAll = accordionInner.querySelectorAll('li');
+            for (let i = 0; i < liAll.length; i++) {
+              liAll[i].tabIndex = "0";
             }
         }
       })

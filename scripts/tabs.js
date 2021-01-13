@@ -17,9 +17,9 @@ tabBtnAll.forEach(function (tabsBtn) {
         accContent.classList.remove('accordion__inner-active');
       }
     })
-    
+
     let elemAll = document.querySelectorAll(`[data-target="${path}"]`);
-     
+
     for (let i=0; i < elemAll.length; i++) {
       elemAll[i].classList.add('accordion__inner-active');
     }

@@ -20,6 +20,8 @@
   <script src="./scripts/accordion.js" defer></script>
   <script src="./scripts/tabs.js" defer></script>
   <script src="./scripts/generatorData.js" defer></script>
+  <script src="./scripts/events.js" defer></script>
+  <script src="./scripts/editions.js" defer></script>
   <title>Blanchard</title>
 </head>
 
@@ -125,7 +127,7 @@
   </header>
 
   <section class="hero">
-    <h1 class="hidden">Blanchard. Художественная галерея</h1>
+    <h1 class="visually-hidden">Blanchard. Художественная галерея</h1>
     <div class="container container-hero">
       <div class="hero__inner">
         <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
@@ -139,7 +141,7 @@
   <section class="info-block">
     <div class="container container-info-block">
       <div class="data">
-        <h2 class="data__title site-title">О нас</h2>
+        <h3 class="data__title site-title">О нас</h3>
         <p class="data__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как способного принимать собственные
           решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
@@ -158,138 +160,140 @@
   <section class="gallery">
     <div class="container container-gallery">
       <div>
-        <h2 class="gallery__title">Галерея</h2>
-        <div class="filter gallery__filter">
-          <span class="filter__span">Фильтровать по:</span>
-          <select class="filter__select js-choice">
-            <option value="0">Автор</option>
-            <option value="1">Направление</option>
-            <option value="2">Техника</option>
-          </select>
+        <h3 class="gallery__title">Галерея</h3>
+        <div class="gallery__block">
+          <div class="filter gallery__filter">
+            <span class="filter__span">Фильтровать по:</span>
+            <select class="filter__select js-choice">
+              <option value="0">Автор</option>
+              <option value="1">Направление</option>
+              <option value="2">Техника</option>
+            </select>
+          </div>
+          <p class="gallery__remark">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+            скачиваний <button class="gallery__authorization">авторизуйтесь,</button> либо воспользуйтесь лицензией.
+          </p>
         </div>
-        <p class="gallery__remark">
-          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
-          скачиваний <button class="gallery__authorization">авторизуйтесь,</button> либо воспользуйтесь лицензией.
-        </p>
       </div>
 
       <div>
         <div class="swiper gallery__swiper">
-          <div class="swiper-container">
+          <div class="swiper-container swiper1">
             <div class="swiper__navigation">
-              <div class="swiper-button-prev" tabindex="0"></div>
+              <div class="swiper-button-prev swiper-button-prev-1" tabindex="0"></div>
               <div class="swiper__pages">
-                <span class="swiper__page-actual">1</span>
+                <span class="swiper__page-actual swiper__page-actual1">1</span>
                 &#47;
                 <span class="swiper__page-all">3</span>
               </div>
-              <div class="swiper-button-next" tabindex="0"></div>
+              <div class="swiper-button-next swiper-button-next-1" tabindex="0"></div>
             </div>
 
             <div class="swiper-wrapper">
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures13.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures14.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures15.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures16.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures17.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures18.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures19.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures20.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures21.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures22.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures23.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures24.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures25.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures26.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures27.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures28.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures29.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
                 </div>
               </div>
-              <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide swiper-slide1" tabindex="0">
                 <div class="swiper-slide__inner">
                   <img src="./images/pictures30.jpg" alt="picture">
                   <span class="swiper-slide__loupe"></span>
@@ -340,7 +344,6 @@
         </div>
 
         <div class="accordion tabs__accordion">
-
           <div class="accordion__dropdown-container first-dropdown" id="1400">
             <div class="accordion__heading">
               <div class="accordion__subtitle" tabindex="0">C 1400 по 1499 гг.</div>
@@ -348,209 +351,124 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordin__td">Бенедетто ди Биндо</td>
-                    <td class="accordin__td">Веккьетта</td>
-                    <td class="accordin__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Бергоньоне, Амброджо</td>
-                    <td class="accordin__td">Андреа Верроккьо</td>
-                    <td class="accordin__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Биссоло, Франческо</td>
-                    <td class="accordin__td">Доменико Гирландайо</td>
-                    <td class="accordin__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Больтраффио, Джованни</td>
-                    <td class="accordin__td">Беноццо Гоццоли</td>
-                    <td class="accordin__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Бонсиньори, Франческо</td>
-                    <td class="accordin__td">Граначчи, Франческо</td>
-                    <td class="accordin__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Боттичини, Рафаэлло</td>
-                    <td class="accordin__td">Грегорио ди Чекко</td>
-                    <td class="accordin__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Брамантино</td>
-                    <td class="accordin__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Бреа, Людовико</td>
-                    <td class="accordin__td">Джованни ди Паоло</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordin__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordin__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div> 
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item">Бреа, Людовико</li>
+                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
+              </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="active-td accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Брамантино</td>
-                    <td class="accordion__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бреа, Людовико</td>
-                    <td class="accordion__td">Джованни ди Паоло</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordion__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="active-li accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item">Бреа, Людовико</li>
+                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Андрей Рублев</td>
-                    <td class="accordion__td">Дионисий</td>
-                    <td class="accordion__td">Феофан Грек</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Илья Репин</td>
-                    <td class="accordion__td">Илья Айвазовский</td>
-                    <td class="accordion__td">Василий Кандинский</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Михаил Врубель</td>
-                    <td class="accordion__td">Николай Рерих</td>
-                    <td class="accordion__td">Марк Шагал</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Валентин Серов</td>
-                    <td class="accordion__td">Алексей Гаврилов</td>
-                    <td class="accordion__td">Карл Брюллов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Константин Коровин</td>
-                    <td class="accordion__td">Исаак Левитан</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Андрей Рублев</li>
+                  <li class="accordion__item">Дионисий</li>
+                  <li class="accordion__item">Феофан Грек</li>
+                  <li class="accordion__item">Илья Репин</li>
+                  <li class="accordion__item">Илья Айвазовский</li>
+                  <li class="accordion__item">Василий Кандинский</li>
+                  <li class="accordion__item">Михаил Врубель</li>
+                  <li class="accordion__item">Николай Рерих</li>
+                  <li class="accordion__item">Марк Шагал</li>
+                  <li class="accordion__item">Валентин Серов</li>
+                  <li class="accordion__item">Алексей Гаврилов</li>
+                  <li class="accordion__item">Карл Брюллов</li>
+                  <li class="accordion__item">Константин Коровин</li>
+                  <li class="accordion__item">Исаак Левитан</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Брамантино</td>
-                    <td class="accordion__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бреа, Людовико</td>
-                    <td class="accordion__td">Джованни ди Паоло</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordion__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item">Бреа, Людовико</li>
+                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -562,199 +480,117 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Брамантино</td>
-                    <td class="accordion__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бреа, Людовико</td>
-                    <td class="accordion__td">Джованни ди Паоло</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordion__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item">Бреа, Людовико</li>
+                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Брамантино</td>
-                    <td class="accordion__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бреа, Людовико</td>
-                    <td class="accordion__td">Джованни ди Паоло</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordion__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item">Бреа, Людовико</li>
+                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бьяджо д’Антонио Туччи</td>
-                    <td class="accordion__td">Джорджоне</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item">Джорджоне</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Виктория Антонова</td>
-                    <td class="accordion__td">Александра Лебедева</td>
-                    <td class="accordion__td">Иван Наумов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Михаил Лосев</td>
-                    <td class="accordion__td">Мария Миронова</td>
-                    <td class="accordion__td">Константин Жуков</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Марта Соколова</td>
-                    <td class="accordion__td">Александр Григорьев</td>
-                    <td class="accordion__td">Валерия Александрова</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вероника Никитина</td>
-                    <td class="accordion__td">Елизавета Козлова</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Елизавета Гуляева</td>
-                    <td class="accordion__td">Серафима Лаврова</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Виктория Антонова</li>
+                  <li class="accordion__item">Александра Лебедева</li>
+                  <li class="accordion__item">ван Наумов</li>
+                  <li class="accordion__item">Михаил Лосев</li>
+                  <li class="accordion__item">Мария Миронова</li>
+                  <li class="accordion__item">Константин Жуков</li>
+                  <li class="accordion__item">Марта Соколова</li>
+                  <li class="accordion__item">Александр Григорьев</li>
+                  <li class="accordion__item">Валерия Александрова</li>
+                  <li class="accordion__item">Вероника Никитина</li>
+                  <li class="accordion__item">Елизавета Козлова</li>
+                  <li class="accordion__item">Елизавета Гуляева</li>
+                  <li class="accordion__item">Серафима Лаврова</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Брамантино</td>
-                    <td class="accordion__td">Джованни да Удине</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Брамантино</li>
+                  <li class="accordion__item">Джованни да Удине</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -765,167 +601,105 @@
               <span class="accordion__icon" tabindex="0"></span>
             </div>
             <div class="accordion__body">
-                <div class="accordion__inner" data-target="one">
-                  <table class="accordion__table">
-                    <tr>
-                      <td class="accordion__td">Барбра Харви</td>
-                      <td class="accordion__td">Луиза Доусон</td>
-                      <td class="accordion__td">Ричард Стэнли</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Айра Хэйнс</td>
-                      <td class="accordion__td">Сидни Хаббард</td>
-                      <td class="accordion__td">Глэдис Логан</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Шон Робинсон</td>
-                      <td class="accordion__td">Мелисса Пауэлл</td>
-                      <td class="accordion__td">Тайлер Прайс</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Вивьен Леонард</td>
-                      <td class="accordion__td">Кевин Беннетт</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Джералдин Спарксн</td>
-                      <td class="accordion__td">Гертруд Келли</td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="accordion__inner" data-target="two">
-                  <table class="accordion__table">
-                    <tr>
-                      <td class="accordion__td">Барбра Харви</td>
-                      <td class="accordion__td">Луиза Доусон</td>
-                      <td class="accordion__td">Ричард Стэнли</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Айра Хэйнс</td>
-                      <td class="accordion__td">Сидни Хаббард</td>
-                      <td class="accordion__td">Глэдис Логан</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Шон Робинсон</td>
-                      <td class="accordion__td">Мелисса Пауэлл</td>
-                      <td class="accordion__td">Тайлер Прайс</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Вивьен Леонард</td>
-                      <td class="accordion__td">Кевин Беннетт</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Джералдин Спарксн</td>
-                      <td class="accordion__td">Гертруд Келли</td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="accordion__inner accordion__inner-active" data-target="three">
-                  <table class="accordion__table">
-                    <tr>
-                      <td class="accordion__td">Барбра Харви</td>
-                      <td class="accordion__td">Луиза Доусон</td>
-                      <td class="accordion__td">Ричард Стэнли</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Айра Хэйнс</td>
-                      <td class="accordion__td">Сидни Хаббард</td>
-                      <td class="accordion__td">Глэдис Логан</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Шон Робинсон</td>
-                      <td class="accordion__td">Мелисса Пауэлл</td>
-                      <td class="accordion__td">Тайлер Прайс</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Вивьен Леонард</td>
-                      <td class="accordion__td">Кевин Беннетт</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Джералдин Спарксн</td>
-                      <td class="accordion__td">Гертруд Келли</td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="accordion__inner" data-target="four">
-                  <table class="accordion__table">
-                    <tr>
-                      <td class="accordion__td">Ирина Литвинова</td>
-                      <td class="accordion__td">Константин Соловьев</td>
-                      <td class="accordion__td">Варвара Антонова</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Михаил Лосев</td>
-                      <td class="accordion__td">Мария Миронова</td>
-                      <td class="accordion__td">Константин Жуков</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Алина Романова</td>
-                      <td class="accordion__td">Екатерина Кириллова</td>
-                      <td class="accordion__td">Тимофей Романов</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Всеволод Сотников</td>
-                      <td class="accordion__td">Тихон Кириллов</td>
-                      <td class="accordion__td">Максим Филатов</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Полина Матвеева</td>
-                      <td class="accordion__td">Даниил Никулин</td>
-                      <td class="accordion__td">Виктория Гуляева</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Константин Коровин</td>
-                      <td class="accordion__td">Артур Волков</td>
-                      <td class="accordion__td">Никита Москвин</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Константин Коровин</td>
-                      <td class="accordion__td">Дамир Трифонов</td>
-                      <td class="accordion__td">Даниил Никулин</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="accordion__inner" data-target="five">
-                  <table class="accordion__table">
-                    <tr>
-                      <td class="accordion__td">Бенедетто ди Биндо</td>
-                      <td class="accordion__td">Веккьетта</td>
-                      <td class="accordion__td">Парентино, Бернардо</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Бергоньоне, Амброджо</td>
-                      <td class="accordion__td">Андреа Верроккьо</td>
-                      <td class="accordion__td">Пезеллино</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Биссоло, Франческо</td>
-                      <td class="accordion__td">Доменико Гирландайо</td>
-                      <td class="accordion__td">Пьетро Перуджино</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Больтраффио, Джованни</td>
-                      <td class="accordion__td">Беноццо Гоццоли</td>
-                      <td class="accordion__td">Перуцци, Бальдассаре</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Бонсиньори, Франческо</td>
-                      <td class="accordion__td">Граначчи, Франческо</td>
-                      <td class="accordion__td">Пизанелло</td>
-                    </tr>
-                    <tr>
-                      <td class="accordion__td">Боттичини, Рафаэлло</td>
-                      <td class="accordion__td">Грегорио ди Чекко</td>
-                      <td class="accordion__td">Пинтуриккьо</td>
-                    </tr>
-                  </table>
-                </div>
+              <div class="accordion__inner" data-target="one">
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
+              <div class="accordion__inner" data-target="two">
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
+              </div>
+              <div class="accordion__inner accordion__inner-active" data-target="three">
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
+              </div>
+              <div class="accordion__inner" data-target="four">
+                <ul class="accordion__list">
+                  <li class="accordion__item">Ирина Литвинова</li>
+                  <li class="accordion__item">Константин Соловьев</li>
+                  <li class="accordion__item">Варвара Антонова</li>
+                  <li class="accordion__item">Михаил Лосев</li>
+                  <li class="accordion__item">Мария Миронова</li>
+                  <li class="accordion__item">Константин Жуков</li>
+                  <li class="accordion__item">Алина Романова</li>
+                  <li class="accordion__item">Екатерина Кириллова</li>
+                  <li class="accordion__item">Тимофей Романов</li>
+                  <li class="accordion__item">Всеволод Сотников</li>
+                  <li class="accordion__item">Тихон Кириллов</li>
+                  <li class="accordion__item">Максим Филатов</li>
+                  <li class="accordion__item">Полина Матвеева</li>
+                  <li class="accordion__item">Даниил Никулин</li>
+                  <li class="accordion__item">Виктория Гуляева</li>
+                  <li class="accordion__item">Константин Коровин</li>
+                  <li class="accordion__item">Артур Волков</li>
+                  <li class="accordion__item">Никита Москвин</li>
+                  <li class="accordion__item">Константин Коровин</li>
+                  <li class="accordion__item">Дамир Трифонов</li>
+                  <li class="accordion__item">Даниил Никулин</li>
+                </ul>
+              </div>
+              <div class="accordion__inner" data-target="five">
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="accordion__dropdown-container" id="1700">
@@ -935,164 +709,97 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Анна Шмелева</td>
-                    <td class="accordion__td">Никита Крылов</td>
-                    <td class="accordion__td">Максим Алексеев</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Никита Москвин</td>
-                    <td class="accordion__td">Софья Миронова</td>
-                    <td class="accordion__td">Ульяна Борисова</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Артур Волков</td>
-                    <td class="accordion__td">Андрей Казаков</td>
-                    <td class="accordion__td">Даниил Никулин</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Алина Романова</td>
-                    <td class="accordion__td">Екатерина Кириллова</td>
-                    <td class="accordion__td">Тимофей Романов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Всеволод Сотников</td>
-                    <td class="accordion__td">Тихон Кириллов</td>
-                    <td class="accordion__td">Максим Филатов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Полина Матвеева</td>
-                    <td class="accordion__td">Даниил Никулин</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Константин Коровин</td>
-                    <td class="accordion__td">Артур Волков</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Константин Коровин</td>
-                    <td class="accordion__td">Исаак Левитан</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Анна Шмелева</li>
+                  <li class="accordion__item">Никита Крылов</li>
+                  <li class="accordion__item">Максим Алексеев</li>
+                  <li class="accordion__item">Никита Москвин</li>
+                  <li class="accordion__item">Софья Миронова</li>
+                  <li class="accordion__item">Ульяна Борисова</li>
+                  <li class="accordion__item">Артур Волков</li>
+                  <li class="accordion__item">Андрей Казаков</li>
+                  <li class="accordion__item">Даниил Никулин</li>
+                  <li class="accordion__item">Алина Романова</li>
+                  <li class="accordion__item">Екатерина Кириллова</li>
+                  <li class="accordion__item">Тимофей Романов</li>
+                  <li class="accordion__item">Всеволод Сотников</li>
+                  <li class="accordion__item">Тихон Кириллов</li>
+                  <li class="accordion__item">Максим Филатов</li>
+                  <li class="accordion__item">Полина Матвеева</li>
+                  <li class="accordion__item">Даниил Никулин</li>
+                  <li class="accordion__item">Константин Коровин</li>
+                  <li class="accordion__item">Артур Волков</li>
+                  <li class="accordion__item">Константин Коровин</li>
+                  <li class="accordion__item">Исаак Левитан</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1104,154 +811,97 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                </ul>
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Мария Мельникова</td>
-                    <td class="accordion__td">Гордей Лазарев</td>
-                    <td class="accordion__td">Артём Павлов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Семён Михайлов</td>
-                    <td class="accordion__td">Асия Ильина</td>
-                    <td class="accordion__td">Мария Давыдова</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Елена Полякова</td>
-                    <td class="accordion__td">Артур Волков</td>
-                    <td class="accordion__td">Артём Савин</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Максим Гордеев</td>
-                    <td class="accordion__td">Арина Козлова</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Мария Мельникова</li>
+                  <li class="accordion__item">Гордей Лазарев</li>
+                  <li class="accordion__item">Артём Павлов</li>
+                  <li class="accordion__item">Семён Михайлов</li>
+                  <li class="accordion__item">Асия Ильина</li>
+                  <li class="accordion__item">Мария Давыдова</li>
+                  <li class="accordion__item">Елена Полякова</li>
+                  <li class="accordion__item">Артур Волков</li>
+                  <li class="accordion__item">Артём Савин</li>
+                  <li class="accordion__item">Максим Гордеев</li>
+                  <li class="accordion__item">Арина Козлова</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Бенедетто ди Биндо</td>
-                    <td class="accordion__td">Веккьетта</td>
-                    <td class="accordion__td">Парентино, Бернардо</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бергоньоне, Амброджо</td>
-                    <td class="accordion__td">Андреа Верроккьо</td>
-                    <td class="accordion__td">Пезеллино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Биссоло, Франческо</td>
-                    <td class="accordion__td">Доменико Гирландайо</td>
-                    <td class="accordion__td">Пьетро Перуджино</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Больтраффио, Джованни</td>
-                    <td class="accordion__td">Беноццо Гоццоли</td>
-                    <td class="accordion__td">Перуцци, Бальдассаре</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Бонсиньори, Франческо</td>
-                    <td class="accordion__td">Граначчи, Франческо</td>
-                    <td class="accordion__td">Пизанелло</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Боттичини, Рафаэлло</td>
-                    <td class="accordion__td">Грегорио ди Чекко</td>
-                    <td class="accordion__td">Пинтуриккьо</td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Бенедетто ди Биндо</li>
+                  <li class="accordion__item">Веккьетта</li>
+                  <li class="accordion__item">Парентино, Бернардо</li>
+                  <li class="accordion__item">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item">Андреа Верроккьо</li>
+                  <li class="accordion__item">Пезеллино</li>
+                  <li class="accordion__item">Биссоло, Франческо</li>
+                  <li class="accordion__item">Доменико Гирландайо</li>
+                  <li class="accordion__item">Пьетро Перуджино</li>
+                  <li class="accordion__item">Больтраффио, Джованни</li>
+                  <li class="accordion__item">Беноццо Гоццоли</li>
+                  <li class="accordion__item">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item">Граначчи, Франческо</li>
+                  <li class="accordion__item">Пизанелло</li>
+                  <li class="accordion__item">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item">Грегорио ди Чекко</li>
+                  <li class="accordion__item">Пинтуриккьо</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1263,144 +913,86 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Ирина Литвинова</td>
-                    <td class="accordion__td">Константин Соловьев</td>
-                    <td class="accordion__td">Варвара Антонова</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Михаил Лосев</td>
-                    <td class="accordion__td">Мария Миронова</td>
-                    <td class="accordion__td">Константин Жуков</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Алина Романова</td>
-                    <td class="accordion__td">Екатерина Кириллова</td>
-                    <td class="accordion__td">Тимофей Романов</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Всеволод Сотников</td>
-                    <td class="accordion__td">Тихон Кириллов</td>
-                    <td class="accordion__td">Максим Филатов</td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Ирина Литвинова</li>
+                  <li class="accordion__item">Константин Соловьев</li>
+                  <li class="accordion__item">Варвара Антонова</li>
+                  <li class="accordion__item">Михаил Лосев</li>
+                  <li class="accordion__item">Мария Миронова</li>
+                  <li class="accordion__item">Константин Жуков</li>
+                  <li class="accordion__item">Алина Романова</li>
+                  <li class="accordion__item">Екатерина Кириллова</li>
+                  <li class="accordion__item">Тимофей Романов</li>
+                  <li class="accordion__item">Всеволод Сотников</li>
+                  <li class="accordion__item">Тихон Кириллов</li>
+                  <li class="accordion__item">Максим Филатов</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1412,137 +1004,339 @@
             </div>
             <div class="accordion__body">
               <div class="accordion__inner" data-target="one">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="two">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Вивьен Леонард</td>
-                    <td class="accordion__td">Кевин Беннетт</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Джералдин Спарксн</td>
-                    <td class="accordion__td">Гертруд Келли</td>
-                    <td></td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                  <li class="accordion__item">Джералдин Спарксн</li>
+                  <li class="accordion__item">Гертруд Келли</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="four">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Ирина Литвинова</td>
-                    <td class="accordion__td">Константин Соловьев</td>
-                    <td class="accordion__td">Варвара Антонова</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Михаил Лосев</td>
-                    <td class="accordion__td">Мария Миронова</td>
-                    <td class="accordion__td">Константин Жуков</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Алина Романова</td>
-                    <td class="accordion__td">Екатерина Кириллова</td>
-                    <td class="accordion__td">Тимофей Романов</td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Ирина Литвинова</li>
+                  <li class="accordion__item">Константин Соловьев</li>
+                  <li class="accordion__item">Варвара Антонова</li>
+                  <li class="accordion__item">Михаил Лосев</li>
+                  <li class="accordion__item">Мария Миронова</li>
+                  <li class="accordion__item">Константин Жуков</li>
+                  <li class="accordion__item">Алина Романова</li>
+                  <li class="accordion__item">Екатерина Кириллова</li>
+                  <li class="accordion__item">Тимофей Романов</li>
+                </ul>
               </div>
               <div class="accordion__inner" data-target="five">
-                <table class="accordion__table">
-                  <tr>
-                    <td class="accordion__td">Барбра Харви</td>
-                    <td class="accordion__td">Луиза Доусон</td>
-                    <td class="accordion__td">Ричард Стэнли</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Айра Хэйнс</td>
-                    <td class="accordion__td">Сидни Хаббард</td>
-                    <td class="accordion__td">Глэдис Логан</td>
-                  </tr>
-                  <tr>
-                    <td class="accordion__td">Шон Робинсон</td>
-                    <td class="accordion__td">Мелисса Пауэлл</td>
-                    <td class="accordion__td">Тайлер Прайс</td>
-                  </tr>
-                  <tr>
-                    <td>Вивьен Леонард</td>
-                    <td>Кевин Беннетт</td>
-                  </tr>
-                </table>
+                <ul class="accordion__list">
+                  <li class="accordion__item">Барбра Харви</li>
+                  <li class="accordion__item">Луиза Доусон</li>
+                  <li class="accordion__item">Ричард Стэнли</li>
+                  <li class="accordion__item">Айра Хэйнс</li>
+                  <li class="accordion__item">Сидни Хаббард</li>
+                  <li class="accordion__item">Глэдис Логан</li>
+                  <li class="accordion__item">Шон Робинсон</li>
+                  <li class="accordion__item">Мелисса Пауэлл</li>
+                  <li class="accordion__item">Тайлер Прайс</li>
+                  <li class="accordion__item">Вивьен Леонард</li>
+                  <li class="accordion__item">Кевин Беннетт</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <div class="container">
+      <h3 class="events__title site-title">События</h3>
+      <div class="events__content">
+
+        <div class="events__block">
+          <div>
+            <img src="images/Rectangle 101.1.jpg" alt="" class="events__img">
+            <div class="events__main">
+              <span class="events__place">Музей им. Щусева <br> с 20 марта по 30 апреля</span>
+              <div class="events__container">
+                <div class="events__info">
+                  <h4 class="events__subtitle">Книжная гравюра в живом восприятии</h4>
+                  <p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                    мастерской, где юный Микеланджело.</p>
+                </div>
+                <div class="events__btn">
+                  <a href="" class="events__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="events__block">
+          <div>
+            <img src="images/Rectangle 101.2.jpg" alt="" class="events__img">
+            <div class="events__main">
+              <span class="events__place">ММОМА <br> 24 марта 19:00</span>
+              <div class="events__container">
+                <div class="events__info">
+                  <h4 class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h4>
+                  <p class="events__description">Высокий уровень вовлечения представителей целевой аудитории является
+                    четким доказательством простого факта: постоянный количественный рост и сфера нашей активности
+                    представляет собой интересный эксперимент проверки новых принципов формирования...</p>
+                </div>
+                <div class="events__btn">
+                  <a href="" class="events__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="events__block">
+          <div>
+            <img src="images/Rectangle 101.3.jpg" alt="" class="events__img">
+            <div class="events__main">
+              <span class="events__place">Еврейский музей <br> с 31 марта по 21 апреля</span>
+              <div class="events__container">
+                <div class="events__info">
+                  <h4 class="events__subtitle">Выставка «Формация 2020»</h4>
+                  <p class="events__description">Идейные соображения высшего порядка, а также современная методология
+                    разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное
+                    планирование играет определяющее значение для новых принципов формирования материально-технической
+                    и
+                    кадровой базы.</p>
+                </div>
+                <div class="events__btn">
+                  <a href="" class="events__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="events__all-blocks">
+
+          <div class="events__block">
+            <div>
+              <img src="images/Rectangle 101.4.jpg" alt="" class="events__img">
+              <div class="events__main">
+                <span class="events__place">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</span>
+                <div class="events__container">
+                  <div class="events__info">
+                    <h4 class="events__subtitle">XXIV Международная биеннале молодого искусства</h4>
+                    <p class="events__description">Внезапно, реплицированные с зарубежных источников, современные
+                      исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                      должны
+                      быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                  </div>
+                  <div class="events__btn">
+                    <a href="" class="events__link">Подробнее</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
+          <div class="events__block">
+            <div>
+              <img src="images/Rectangle 101.5.jpg" alt="" class="events__img">
+              <div class="events__main">
+                <span class="events__place">ММАМ <br> с 8 апреля по 20 мая</span>
+                <div class="events__container">
+                  <div class="events__info">
+                    <h4 class="events__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h4>
+                    <p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель
+                      художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело.</p>
+                  </div>
+                  <div class="events__btn">
+                    <a href="" class="events__link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="events__all-btn">Все события</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="editions">
+    <div class="container container-editions">
+      <h3 class="editions__title gallery__title">Издания</h3>
+      <div class="editions__content">
+        <div class="editions__categories">
+          <div class="editions__checkbox checkbox">
+            <h5 class="checkbox__title">Категории</h5>
+            <form>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Бестселлеры
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Искусство
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Архитектура
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Дизайн
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Мода
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Детям
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Художественная литература
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Публицистика
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Путеводители
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Философия
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Учебная литература
+                <span class="checkbox__span"></span>
+              </label>
+              <label class="checkbox__label">
+                <input type="checkbox" class="checkbox__input">
+                Журналы и газеты
+                <span class="checkbox__span"></span>
+              </label>
+            </form>
+          </div>
+
+          <div class="editions__price price">
+            <h5 class="price__title">Цена</h5>
+            <div class="price__block">
+              <span class="price__span">От</span>
+              <input class="price__input" type="number" placeholder="50">
+              <span class="price__span">до</span>
+              <input class="price__input" type="number" placeholder="25 000">
+              <span class="price__span">рублей</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper editions__slider">
+          <div class="swiper-container swiper2">
+
+            <div class="swiper__navigation">
+              <div class="swiper-button-prev swiper-button-prev-2" tabindex="0"></div>
+              <div class="swiper__pages">
+                <span class="swiper__page-actual swiper__page-actual2">1</span>
+                &#47;
+                <span class="swiper__page-all">3</span>
+              </div>
+              <div class="swiper-button-next swiper-button-next-2" tabindex="0"></div>
+            </div>
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide editions__block">
+                <img src="images/editions1.jpg">
+                <div class="editions__details">
+                <div class="editions__info">
+                  <span class="editions__name">Искусство цвета</span><br>
+                 <span class="editions__author"></span> Иттен, Иоханнес
+                </div>
+                <div class="editions__price">
+                  620 руб
+                </div>
+              </div>
+              
+                <button class="editions__btn">
+                  Заказать
+                </button>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions2.jpg">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions3.jpg">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions4.jpg">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions5.jpg">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions6.jpg">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <img src="images/editions7.jpg">
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
