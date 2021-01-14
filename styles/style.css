@@ -553,24 +553,22 @@ button {
 }
 
 .site-title {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 48px;
   line-height: 65px;
   color: var(--dark-color);
 }
 
-.data__title {
-  margin-bottom: 15px;
-}
-
-.data__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+.site-text {
+  font-weight: 400;
   color: var(--dark-color);
   width: 1086px;
   line-height: 32px;
   padding-left: 3px;
+}
+
+.data__title {
+  margin-bottom: 15px;
 }
 
 /*gallery*/
@@ -704,7 +702,6 @@ button {
 .gallery__remark {
   display: block;
   width: 401px;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
@@ -1289,7 +1286,7 @@ button {
 
 .events__all-btn:hover {
   background-color: var(--hover-color);
-  color : var(--light-color);
+  color: var(--light-color);
 }
 
 .events__all-btn:focus:after {
@@ -1299,14 +1296,13 @@ button {
   outline: 2px solid var(--focus-color);
   width: 80%;
   height: 25px;
-  top: 11px;
-  left: 16px;
+  top: 13px;
+  left: 18px;
 }
 
 /* editions */
 
 .editions {
-  position: relative;
   background: url("../images/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4.png");
   min-height: 766px;
 }
@@ -1316,6 +1312,7 @@ button {
 }
 
 .editions__content {
+  position: relative;
   display: flex;
   align-items: flex-start;
 }
@@ -1351,10 +1348,10 @@ button {
 }
 
 .checkbox__label:hover {
-  color : var(--hover-color);
+  color: var(--hover-color);
 }
 
-.checkbox__label:hover .checkbox__span::after  {
+.checkbox__label:hover .checkbox__span::after {
   border: 1px solid var(--hover-color);
 }
 
@@ -1458,8 +1455,8 @@ input::-webkit-inner-spin-button {
 
 .editions__slider {
   position: absolute;
-  right: 144px;
-  top : 116px;
+  right: -14px;
+  top: -51px;
 }
 
 .swiper2 {
@@ -1482,7 +1479,7 @@ input::-webkit-inner-spin-button {
 }
 
 .editions__name {
-  display : inline-block;
+  display: inline-block;
   font-weight: 700;
   color: var(--light-color);
   padding-bottom: 3px;
@@ -1531,3 +1528,21 @@ input::-webkit-inner-spin-button {
   border-radius: 100px;
   background: var(--focus-color);
 }
+
+/*projects*/
+
+/* .container-projects {
+  padding-top: 80px;
+}
+
+.projects__title {
+  margin-bottom: 30px;
+}
+
+.projects__marker {
+  display : inline-block;
+  color: var(--light-color);
+  width: 16px;
+  height: 16px;
+  background: var(--site-color);
+} */
