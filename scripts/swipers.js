@@ -24,18 +24,15 @@ prevEl1.addEventListener('click', () => {
 })
 
 let mySwiper2 = new Swiper('.swiper2', {
-  // Optional parameters
-  spaceBetween: 50,
+  spaceBetween: 38,
   slidesPerView: 3,
   simulateTouch: false,
   slidesPerGroup: 2,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next-2',
     prevEl: '.swiper-button-prev-2',
   },
-
 })
 
 let nextEl2 = document.querySelector('.swiper-button-next-2');
