@@ -177,7 +177,7 @@
           </div>
           <p class="gallery__remark">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
-            скачиваний <button class="gallery__authorization">авторизуйтесь,</button> либо воспользуйтесь лицензией.
+            скачиваний <button class="gallery__authorization" tabindex="0">авторизуйтесь,</button> либо воспользуйтесь лицензией.
           </p>
         </div>
       </div>
@@ -349,12 +349,12 @@
         </div>
 
         <div class="accordion tabs__accordion">
-          <div class="accordion__dropdown-container first-dropdown" id="1400">
+          <div class="accordion__dropdown-container first-dropdown open" id="1400">
             <div class="accordion__heading">
               <div class="accordion__subtitle" tabindex="0">C 1400 по 1499 гг.</div>
               <span class="accordion__icon" tabindex="0"></span>
             </div>
-            <div class="accordion__body">
+            <div class="accordion__body" style="max-height: 342px;">
               <div class="accordion__inner" data-target="one">
                 <ul class="accordion__list">
                   <li class="accordion__item">Барбра Харви</li>
@@ -402,32 +402,32 @@
               </div>
               <div class="accordion__inner accordion__inner-active" data-target="three">
                 <ul class="accordion__list">
-                  <li class="accordion__item">Бенедетто ди Биндо</li>
-                  <li class="accordion__item">Веккьетта</li>
-                  <li class="accordion__item">Парентино, Бернардо</li>
-                  <li class="accordion__item">Бергоньоне, Амброджо</li>
-                  <li class="accordion__item">Андреа Верроккьо</li>
-                  <li class="accordion__item">Пезеллино</li>
-                  <li class="accordion__item">Биссоло, Франческо</li>
-                  <li class="active-li accordion__item">Доменико Гирландайо</li>
-                  <li class="accordion__item">Пьетро Перуджино</li>
-                  <li class="accordion__item">Больтраффио, Джованни</li>
-                  <li class="accordion__item">Беноццо Гоццоли</li>
-                  <li class="accordion__item">Перуцци, Бальдассаре</li>
-                  <li class="accordion__item">Бонсиньори, Франческо</li>
+                  <li class="accordion__item" tabindex="0">Бенедетто ди Биндо</li>
+                  <li class="accordion__item" tabindex="0">Веккьетта</li>
+                  <li class="accordion__item" tabindex="0">Парентино, Бернардо</li>
+                  <li class="accordion__item" tabindex="0">Бергоньоне, Амброджо</li>
+                  <li class="accordion__item" tabindex="0">Андреа Верроккьо</li>
+                  <li class="accordion__item" tabindex="0">Пезеллино</li>
+                  <li class="accordion__item" tabindex="0">Биссоло, Франческо</li>
+                  <li class="active-li accordion__item" tabindex="0">Доменико Гирландайо</li>
+                  <li class="accordion__item" tabindex="0">Пьетро Перуджино</li>
+                  <li class="accordion__item" tabindex="0">Больтраффио, Джованни</li>
+                  <li class="accordion__item" tabindex="0">Беноццо Гоццоли</li>
+                  <li class="accordion__item" tabindex="0">Перуцци, Бальдассаре</li>
+                  <li class="accordion__item" tabindex="0">Бонсиньори, Франческо</li>
                   <li class="accordion__item">Граначчи, Франческо</li>
-                  <li class="accordion__item">Пизанелло</li>
-                  <li class="accordion__item">Боттичини, Рафаэлло</li>
-                  <li class="accordion__item">Грегорио ди Чекко</li>
-                  <li class="accordion__item">Пинтуриккьо</li>
-                  <li class="accordion__item">Брамантино</li>
-                  <li class="accordion__item">Джованни да Удине</li>
+                  <li class="accordion__item" tabindex="0">Пизанелло</li>
+                  <li class="accordion__item" tabindex="0">Боттичини, Рафаэлло</li>
+                  <li class="accordion__item" tabindex="0">Грегорио ди Чекко</li>
+                  <li class="accordion__item" tabindex="0">Пинтуриккьо</li>
+                  <li class="accordion__item" tabindex="0">Брамантино</li>
+                  <li class="accordion__item" tabindex="0">Джованни да Удине</li>
                   <li class="accordion__item"></li>
-                  <li class="accordion__item">Бреа, Людовико</li>
-                  <li class="accordion__item">Джованни ди Паоло</li>
+                  <li class="accordion__item" tabindex="0">Бреа, Людовико</li>
+                  <li class="accordion__item" tabindex="0">Джованни ди Паоло</li>
                   <li class="accordion__item"></li>
-                  <li class="accordion__item">Бьяджо д’Антонио Туччи</li>
-                  <li class="accordion__item">Джорджоне</li>
+                  <li class="accordion__item" tabindex="0">Бьяджо д’Антонио Туччи</li>
+                  <li class="accordion__item" tabindex="0">Джорджоне</li>
                 </ul>
               </div>
               <div class="accordion__inner" data-target="four">
@@ -1206,9 +1206,9 @@
             </div>
           </div>
         </li>
-
-        <button class="events__all-btn" tabindex="0">Все события</button>
       </ul>
+   
+      <button class="events__all-btn" tabindex="0">Все события</button>
     </div>
   </section>
 
@@ -1428,23 +1428,23 @@
           <div class="swiper-button-next swiper-button-next-3" tabindex="0"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners1.png" alt="partner1"
-                class="projects__img"></div>
+                class="projects__img partner1"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners2.png" alt="partner1"
-                class="projects__img"></div>
+                class="projects__img partner2"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners3.png" alt="partner3"
-                class="projects__img"></div>
+                class="projects__img partner3"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners4.png" alt="partner4"
-                class="projects__img"></div>
+                class="projects__img partner4"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners5.png" alt="partner5"
-                class="projects__img"></div>
+                class="projects__img partner5"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners6.png" alt="partner6"
-                class="projects__img"></div>
+                class="projects__img partner6"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners7.png" alt="partner7"
-                class="projects__img"></div>
+                class="projects__img partner7"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners8.png" alt="partner8"
-                class="projects__img"></div>
+                class="projects__img partner8"></div>
             <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners9.png" alt="partner9"
-                class="projects__img"></div>
+                class="projects__img partner9"></div>
           </div>
         </div>
       </div>
@@ -1471,7 +1471,7 @@
           <li class="contacts__item"><a href="" class="contacts__telegram contacts__link"></a></li>
         </ul>
       </div>
-      <div class="contacts__map" id="map" style="width: 1220px; height: 700px"></div>
+      <div class="contacts__map" id="map" style="width: 1220px; height: 696px"></div>
     </div>
   </section>
   <footer class="footer">

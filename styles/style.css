@@ -115,8 +115,8 @@ button {
 }
 
 .nav__link:focus {
-/*   outline: 2px solid var(--site-color); */
-  outline : none;
+  /*   outline: 2px solid var(--site-color); */
+  outline: none;
 }
 
 .nav__link:focus::after {
@@ -126,7 +126,7 @@ button {
   width: 100%;
   height: 26px;
   top: 35px;
-  left:-2px;
+  left: -2px;
 }
 
 .nav__link:hover {
@@ -736,6 +736,10 @@ button {
 
 .gallery__authorization:active {
   color: var(--focus-color);
+}
+
+.gallery__authorization:focus {
+  outline : 1px solid var(--focus-color);
 }
 
 .gallery__swiper {
@@ -1548,10 +1552,10 @@ input::-webkit-inner-spin-button {
 .editions__btn:focus::after {
   position: absolute;
   content: '';
-  top: 7px;
-  left: 10px;
+  top: 6px;
+  left: 15px;
   width: 83px;
-  height: 18px;
+  height: 20px;
   border: 2px solid var(--focus-color);
 }
 
@@ -1671,20 +1675,19 @@ input::-webkit-inner-spin-button {
 }
 
 .swiper3 {
-  width: 1650px;
+  width: 1452px;
   margin-bottom: 80px;
-  padding: 0 45px;
   position: static !important;
 }
 
 .swiper-button-prev-3 {
-  top: 45px;
-  left: 10px;
+  top: 60px;
+  left: 2px;
 }
 
 .swiper-button-next-3 {
-  top: 45px;
-  left: 1612px;
+  top: 60px;
+  left: 1576px;
 }
 
 .projects__partner {
@@ -1706,6 +1709,51 @@ input::-webkit-inner-spin-button {
   transition: filter .3s ease;
 }
 
+.partner1 {
+  width: 244px;
+  height: 63px;
+}
+
+.partner2 {
+  width: 330px;
+  height: 59px;
+}
+
+.partner3 {
+  width: 269px;
+  height: 63px;
+}
+
+.partner4 {
+  width: 123px;
+  height: 85px;
+}
+
+.partner5 {
+  width: 173px;
+  height: 85px;
+}
+
+.partner6 {
+  width: 252px;
+  height: 70px;
+}
+
+.partner7 {
+  width: 286px;
+  height: 69px;
+}
+
+.partner8 {
+  width: 185px;
+  height: 81px;
+}
+
+.partner9 {
+  width: 229px;
+  height: 62px;
+}
+
 .projects__img:hover {
   filter: none;
 }
@@ -1713,7 +1761,8 @@ input::-webkit-inner-spin-button {
 /*contacts*/
 
 .contacts__title {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+  letter-spacing: 0;
 }
 
 .contacts__block {
@@ -1722,19 +1771,20 @@ input::-webkit-inner-spin-button {
 }
 
 .contacts__info {
-  padding: 124px 122px 124px 160px;
+  padding: 125px 122px 10px 160px;
 }
 
 .contacts__subtitle {
   font-weight: 600;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  letter-spacing: -0.4px;
 }
 
 .contacts__address {
   display: block;
   font-weight: 400;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .feedback {
@@ -1745,17 +1795,21 @@ input::-webkit-inner-spin-button {
 .contacts__connect {
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
+}
+
+.contacts__connect {
+  letter-spacing: -0.1px;
 }
 
 .feedback__input {
   display: block;
   border: 1px solid var(--dark-color);
   border-radius: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   width: 400px;
   height: 40px;
-  padding: 4px 24px;
+  padding: 4px 17px;
   outline: none;
 }
 
@@ -1766,13 +1820,14 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback__btn {
+  display: block;
   position: relative;
   outline: none;
   background: transparent;
   color: var(--site-color);
   border: 2px solid var(--site-color);
   border-radius: 100px;
-  padding: 14px 25px;
+  padding: 19px 33px;
   font-weight: 700;
   font-size: 18px;
   transition: all .3s ease;
@@ -1792,8 +1847,8 @@ input::-webkit-inner-spin-button {
   outline: 2px solid var(--focus-color);
   width: 70%;
   height: 25px;
-  top: 11px;
-  left: 18px;
+  top: 17px;
+  left: 21px;
 }
 
 .feedback__btn:active {
@@ -1803,7 +1858,7 @@ input::-webkit-inner-spin-button {
 .feedback__input[name="tel"].js-validate-error-field+div {
   position: absolute;
   z-index: 100;
-  top: 97px;
+  top: 88px;
   left: 15px;
 }
 
@@ -1879,7 +1934,7 @@ input::-webkit-inner-spin-button {
 .container-footer {
   display: flex;
   justify-content: space-between;
-  padding: 47px 0;
+  padding: 50px 4px 47px 4px;
 }
 
 .footer__item:not(:last-child) {
@@ -1911,7 +1966,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__link:focus {
-  outline : none;
+  outline: none;
 }
 
 .footer__link:focus::after {
@@ -1924,5 +1979,3 @@ input::-webkit-inner-spin-button {
   top: -2px;
   left: 0;
 }
-
-

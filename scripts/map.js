@@ -5,7 +5,7 @@
     function init() {
 
       var myMap = new ymaps.Map("map", {
-        center: [55.76226821519981,37.64631227282706],
+        center: [55.76207780232767,37.645206591576354],
         zoom: 14,
         controls: []
       });
@@ -24,8 +24,8 @@
         size: 'small',
         float: 'none',
         position: {
-          bottom: '300px',
-          right: '10px'
+          bottom: '310px',
+          right: '0px'
         }
       });
 
@@ -33,8 +33,8 @@
         size: 'small',
         float: 'none',
         position: {
-          bottom: '350px',
-          right: '10px'
+          bottom: '363px',
+          right: '0px'
         }
       });
     }
