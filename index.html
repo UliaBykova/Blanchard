@@ -22,6 +22,11 @@
   <script src="./scripts/generatorData.js" defer></script>
   <script src="./scripts/events.js" defer></script>
   <script src="./scripts/editions.js" defer></script>
+  <script src="./scripts/just-validate.min.js" defer></script>
+  <script src="./scripts/inputmask.min.js" defer></script>
+  <script src="./scripts/validate.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" defer></script>
+  <script src="./scripts/map.js" defer></script>
   <title>Blanchard</title>
 </head>
 
@@ -37,13 +42,13 @@
         </div>
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Галерея</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
-            <li class="nav__item"><a class="nav__link" href="">События</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Издания</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Проекты</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block1">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block2">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block3">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block4">События</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block5">Издания</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block6">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#block7">Контакты</a></li>
           </ul>
         </nav>
         <a href="" class="header__login">Войти</a>
@@ -138,10 +143,10 @@
     </div>
   </section>
 
-  <section class="info-block">
+  <section class="info-block" id="block1">
     <div class="container container-info-block">
       <div class="data">
-        <h3 class="data__title site-title">О нас</h3>
+        <h2 class="data__title site-title">О нас</h2>
         <p class="data__text site-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как способного принимать собственные
           решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
@@ -157,10 +162,10 @@
     </div>
   </section>
 
-  <section class="gallery">
+  <section class="gallery" id="block2">
     <div class="container container-gallery">
       <div>
-        <h3 class="gallery__title">Галерея</h3>
+        <h2 class="gallery__title">Галерея</h2>
         <div class="gallery__block">
           <div class="filter gallery__filter">
             <span class="filter__span">Фильтровать по:</span>
@@ -306,10 +311,10 @@
     </div>
   </section>
 
-  <section class="catalog">
+  <section class="catalog" id="block3">
     <div class="container container-catalog">
       <div class="catalog__nav">
-        <h3 class="catalog__title site-title">Каталог</h3>
+        <h2 class="catalog__title site-title">Каталог</h2>
         <ul class="tabs__list">
           <li class="tabs__item"><button class="tabs__btn" data-path="one"></button></li>
           <li class="tabs__item"><button class="tabs__btn" data-path="two"></button></li>
@@ -1089,19 +1094,20 @@
     </div>
   </section>
 
-  <section class="events">
+  <section class="events" id="block4">
     <div class="container">
-      <h3 class="events__title site-title">События</h3>
-      <div class="events__content">
+      <h2 class="events__title site-title">События</h2>
+      <ul class="events__content">
 
-        <div class="events__block">
+        <li class="events__block">
           <div>
             <img src="images/Rectangle101.1.jpg" alt="" class="events__img">
             <div class="events__main">
-              <span class="events__place">Музей им. Щусева <br> с 20 марта по 30 апреля</span>
+              <span class="events__place">Музей им. Щусева</span>
+              <span class="events__date">с 20 марта по 30 апреля</span>
               <div class="events__container">
                 <div class="events__info">
-                  <h4 class="events__subtitle">Книжная гравюра в живом восприятии</h4>
+                  <h3 class="events__subtitle site-subtitle">Книжная гравюра в живом восприятии</h3>
                   <p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель
                     художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                     мастерской, где юный Микеланджело.</p>
@@ -1112,16 +1118,17 @@
               </div>
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="events__block">
+        <li class="events__block">
           <div>
             <img src="images/Rectangle101.2.jpg" alt="" class="events__img">
             <div class="events__main">
-              <span class="events__place">ММОМА <br> 24 марта 19:00</span>
+              <span class="events__place">ММОМА</span>
+              <span class="events__date">24 марта 19:00</span>
               <div class="events__container">
                 <div class="events__info">
-                  <h4 class="events__subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h4>
+                  <h3 class="events__subtitle site-subtitle">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                   <p class="events__description">Высокий уровень вовлечения представителей целевой аудитории является
                     четким доказательством простого факта: постоянный количественный рост и сфера нашей активности
                     представляет собой интересный эксперимент проверки новых принципов формирования...</p>
@@ -1132,16 +1139,17 @@
               </div>
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="events__block">
+        <li class="events__block">
           <div>
             <img src="images/Rectangle101.3.jpg" alt="" class="events__img">
             <div class="events__main">
-              <span class="events__place">Еврейский музей <br> с 31 марта по 21 апреля</span>
+              <span class="events__place">Еврейский музей</span>
+              <span class="events__date">с 31 марта по 21 апреля</span>
               <div class="events__container">
                 <div class="events__info">
-                  <h4 class="events__subtitle">Выставка «Формация 2020»</h4>
+                  <h3 class="events__subtitle site-subtitle">Выставка «Формация 2020»</h3>
                   <p class="events__description">Идейные соображения высшего порядка, а также современная методология
                     разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное
                     планирование играет определяющее значение для новых принципов формирования материально-технической
@@ -1154,59 +1162,59 @@
               </div>
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="events__all-blocks">
-
-          <div class="events__block">
-            <div>
-              <img src="images/Rectangle101.4.jpg" alt="" class="events__img">
-              <div class="events__main">
-                <span class="events__place">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</span>
-                <div class="events__container">
-                  <div class="events__info">
-                    <h4 class="events__subtitle">XXIV Международная биеннале молодого искусства</h4>
-                    <p class="events__description">Внезапно, реплицированные с зарубежных источников, современные
-                      исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
-                      должны
-                      быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
-                  </div>
-                  <div class="events__btn">
-                    <a href="" class="events__link">Подробнее</a>
-                  </div>
+        <li class="events__block">
+          <div>
+            <img src="images/Rectangle101.4.jpg" alt="" class="events__img">
+            <div class="events__main">
+              <span class="events__place">Третьяковка на Крымском валу</span>
+              <span class="events__date">с 30 марта по 30 апреля</span>
+              <div class="events__container">
+                <div class="events__info">
+                  <h3 class="events__subtitle site-subtitle">XXIV Международная биеннале молодого искусства</h3>
+                  <p class="events__description">Внезапно, реплицированные с зарубежных источников, современные
+                    исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
+                    должны
+                    быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                </div>
+                <div class="events__btn">
+                  <a href="" class="events__link">Подробнее</a>
                 </div>
               </div>
             </div>
           </div>
+        </li>
 
-          <div class="events__block">
-            <div>
-              <img src="images/Rectangle101.5.jpg" alt="" class="events__img">
-              <div class="events__main">
-                <span class="events__place">ММАМ <br> с 8 апреля по 20 мая</span>
-                <div class="events__container">
-                  <div class="events__info">
-                    <h4 class="events__subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h4>
-                    <p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель
-                      художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
-                      мастерской, где юный Микеланджело.</p>
-                  </div>
-                  <div class="events__btn">
-                    <a href="" class="events__link">Подробнее</a>
-                  </div>
+        <li class="events__block">
+          <div>
+            <img src="images/Rectangle101.5.jpg" alt="" class="events__img">
+            <div class="events__main">
+              <span class="events__place">ММАМ</span>
+              <span class="events__date">с 8 апреля по 20 мая</span>
+              <div class="events__container">
+                <div class="events__info">
+                  <h3 class="events__subtitle site-subtitle">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                  <p class="events__description">Один из ведущих флорентийских художников Кватроченто, основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                    мастерской, где юный Микеланджело.</p>
+                </div>
+                <div class="events__btn">
+                  <a href="" class="events__link">Подробнее</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </li>
+
         <button class="events__all-btn" tabindex="0">Все события</button>
-      </div>
+      </ul>
     </div>
   </section>
 
-  <section class="editions">
+  <section class="editions" id="block5">
     <div class="container container-editions">
-      <h3 class="editions__title gallery__title">Издания</h3>
+      <h2 class="editions__title gallery__title">Издания</h2>
       <div class="editions__content">
         <div class="editions__categories">
           <div class="editions__checkbox checkbox">
@@ -1289,7 +1297,6 @@
 
         <div class="swiper editions__slider">
           <div class="swiper-container swiper2">
-
             <div class="swiper__navigation">
               <div class="swiper-button-prev swiper-button-prev-2" tabindex="0"></div>
               <div class="swiper__pages">
@@ -1305,7 +1312,7 @@
                 <img src="images/editions1.jpg" alt="Искусство цвета">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Искусство цвета</span><br>
+                    <span class="editions__name">Искусство цвета</span>
                     <span class="editions__author">Иттен, Иоханнес</span>
                   </div>
                   <div class="editions__sum">620 руб</div>
@@ -1317,7 +1324,7 @@
                 <img src="images/editions2.jpg" alt="Типографика">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Типографика</span><br>
+                    <span class="editions__name">Типографика</span>
                     <span class="editions__author">Рудер, Эмиль</span>
                   </div>
                   <div class="editions__sum">2 450 руб</div>
@@ -1329,7 +1336,7 @@
                 <img src="images/editions3.jpg" alt="Книга про буквы">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Книга про буквы</span><br>
+                    <span class="editions__name">Книга про буквы</span>
                     <span class="editions__author">Гордон, Юрий</span>
                   </div>
                   <div class="editions__sum">2 200 руб</div>
@@ -1341,7 +1348,7 @@
                 <img src="images/editions4.jpg" alt="Николай Ильин">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Николай Ильин</span><br>
+                    <span class="editions__name">Николай Ильин</span>
                     <span class="editions__author">Кричевский, Владимир</span>
                   </div>
                   <div class="editions__sum">1 100 руб</div>
@@ -1353,7 +1360,7 @@
                 <img src="images/editions5.jpg" alt="Модульные сетки">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Модульные сетки в граф...</span><br>
+                    <span class="editions__name">Модульные сетки в граф...</span>
                     <span class="editions__author">Мюллер-Брокманн, Йозеф</span>
                   </div>
                   <div class="editions__sum">1 450 руб</div>
@@ -1365,7 +1372,7 @@
                 <img src="images/editions6.jpg" alt="Эволюция графических">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Эволюция графических ст..</span><br>
+                    <span class="editions__name">Эволюция графических ст..</span>
                     <span class="editions__author">Хеллер, Чваст</span>
                   </div>
                   <div class="editions__sum">3 200 руб</div>
@@ -1377,7 +1384,7 @@
                 <img src="images/editions7.jpg" alt="Искусство и визуальное">
                 <div class="editions__details">
                   <div class="editions__info">
-                    <span class="editions__name">Искусство и визуальное в...</span><br>
+                    <span class="editions__name">Искусство и визуальное в...</span>
                     <span class="editions__author">Арнхейм, Рудольф</span>
                   </div>
                   <div class="editions__sum">2 200 руб</div>
@@ -1391,23 +1398,94 @@
     </div>
   </section>
 
-  <!-- <section class="projects">
+  <section class="projects" id="block6">
     <div class="container container-projects">
-      <h3 class="projects__title site-title">Проекты</h3>
-      <p class="projects__text site-text">
+      <h2 class="projects__title site-title">Проекты</h2>
+      <div class="projects__text site-text">
         Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
         фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
         уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
-        всего, постоянное информационно-пропагандистское<span class="projects__marker">i</span> обеспечение нашей
-        деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-        оппозиции могут быть рассмотрены<span class="projects__marker">i</span> исключительно в разрезе маркетинговых и
-        финансовых<span class="projects__marker">i</span> предпосылок. Банальные, но
+        всего, постоянное <br>информационно-пропагандистское <div class="projects__marker" tabindex="0">
+          <div class="projects__popup">Пример современных тенденций - современная методология разработки</div>
+        </div> обеспечение нашей
+        деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет
+        сомнений, что действия представителей
+        оппозиции могут быть рассмотрены <div class="projects__marker" tabindex="0">
+          <div class="projects__popup">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у
+            вас эмоции</div>
+        </div> исключительно в разрезе маркетинговых и
+        финансовых <div class="projects__marker" tabindex="0">
+          <div class="projects__popup">В стремлении повысить качество</div>
+        </div> предпосылок. Банальные, но
         неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
         которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
         Подробнее: <a href="blanchard-art.ru/projects/about" class="projects__link">blanchard-art.ru/projects/about</a>
-      </p>
+      </div>
+      <h3 class="projects__subtitle site-subtitle">Партнёры проектов:</h3>
+      <div class="swiper projects__slider">
+        <div class="swiper-container swiper3">
+          <div class="swiper-button-prev swiper-button-prev-3" tabindex="0"></div>
+          <div class="swiper-button-next swiper-button-next-3" tabindex="0"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners1.png" alt="partner1"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners2.png" alt="partner1"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners3.png" alt="partner3"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners4.png" alt="partner4"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners5.png" alt="partner5"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners6.png" alt="partner6"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners7.png" alt="partner7"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners8.png" alt="partner8"
+                class="projects__img"></div>
+            <div class="swiper-slide projects__partner" tabindex="0"><img src="images/partners9.png" alt="partner9"
+                class="projects__img"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section> -->
+  </section>
+
+  <section class="contacts" id="block7">
+    <div class="container container-contacts">
+      <h2 class="contacts__title site-title">Контакты</h2>
+    </div>
+    <div class="contacts__block">
+      <div class="contacts__info">
+        <h3 class="contacts__subtitle">Шоурум №4</h3>
+        <span class="contacts__address">Леонтьевский переулок, дом 5, строение 1</span>
+        <form class="contacts__form feedback js-form">
+          <h4 class="feedback__title">Заказать обратный звонок</h4>
+          <input type="text" name="name" placeholder="Имя*" data-validate-field="name" class="feedback__input">
+          <input type="tel" name="tel" placeholder="Телефон*" data-validate-field="tel" class="feedback__input">
+          <button class="feedback__btn">Заказать</button>
+        </form>
+        <h4 class="contacts__connect">Связаться в один клик</h4>
+        <ul class="contacts__social">
+          <li class="contacts__item"><a href="" class="contacts__whatsapp contacts__link"></a></li>
+          <li class="contacts__item"><a href="" class="contacts__telegram contacts__link"></a></li>
+        </ul>
+      </div>
+      <div class="contacts__map" id="map" style="width: 1220px; height: 700px"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container container-footer">
+      <div class="footer__logo">
+        <img src="images/logoFooter.png" alt="Blanchard. Художественная галерея">
+      </div>
+      <ul class="footer__contacts contacts__social">
+        <li class="footer__item"><a href="" class="footer__vkontakte footer__link"></a></li>
+        <li class="footer__item"><a href="" class="footer__instagram footer__link"></a></li>
+        <li class="footer__item"><a href="" class="footer__facebook footer__link"></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 

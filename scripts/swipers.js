@@ -47,3 +47,15 @@ prevEl2.addEventListener('click', () => {
   actualNumber2.textContent = +actualNumber2.textContent - 1;
 })
 
+let mySwiper3 = new Swiper('.swiper3', {
+  spaceBetween: 50,
+  slidesPerView: 3,
+  simulateTouch: false,
+  slidesPerGroup: 3,
+
+  navigation: {
+    nextEl: '.swiper-button-next-3',
+    prevEl: '.swiper-button-prev-3',
+  },
+})
+
