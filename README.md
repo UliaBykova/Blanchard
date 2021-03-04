@@ -1,67 +1,48 @@
-<h1 align="center">PIZZA_SPA</h1>
+<h1 align="center">Blanchard</h1>
 <h2 align="center">
 
-[![My repository](https://img.shields.io/badge/my-code-yellow)](https://github.com/yTemnik/Pizza-spa)
+[![My repository](https://img.shields.io/badge/my-code-green)](https://github.com/yTemnik/Blanchard)
 
 </h2>
 
 ## Description
 
 <p align="center">
-<img src="https://media.giphy.com/media/C8HFvJrwYIvcPkzGoc/giphy.gif" width="80%"></p>
-Pizza implemented by scratch on React+Redux. User has ability to select desired sections of the menu, add or remove products from the basket, specify how many products he wants to add to the basket.
-App contains implementations of map and swiper. 
-Next plan is to add forms and authorization.
- Don't judge too harshly, I'm just learning xD.
+<img src="https://media.giphy.com/media/elw3LsZ27nZ7okOEr9/giphy.gif" width="80%"></p>
+
+Site layout taking into account accessibility. There is animation, swiper, tabs, accordion, Yandex Maps, customization of form elements, customization of select,
+tooltips, form validation.
 
 # Screenshots
-## Modal
+## Animation, 
 <p align="center">
-<img  src="./assets/modal.png" width="80%">
+<img  src="./assets/slide1.png" width="80%">
 </p>
 
 ## Swiper
 <p align="center">
-<img  src="./assets/swiper.png" width="80%">
-</p>
-
-## Slide Pizza
-<p align="center">
 <img  src="./assets/slide2.png" width="80%">
 </p>
 
-## Slide Japan
+## Accordion and tabs
 <p align="center">
 <img  src="./assets/slide3.png" width="80%">
 </p>
 
-## Slide Basket
+## Cards
 <p align="center">
 <img  src="./assets/slide4.png" width="80%">
 </p>
 
-## Slide Map
+## Swiper, tooltips and checkboxes
 <p align="center">
 <img  src="./assets/slide5.png" width="80%">
 </p>
 
-## Slide Promo
+## Swiper and Yandex Maps
 <p align="center">
 <img  src="./assets/slide6.png" width="80%">
 </p>
 
 
 
-## Project setup
-
-I am using a local server, so:
-
-First terminal:
-```
-json-server --watch info.json 
-```
-
-Second terminal:
-```
-npm run start
-```
